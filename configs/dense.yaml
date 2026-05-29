@@ -1,0 +1,10 @@
+model_type: dense
+num_classes: 100
+data_dir: /home/arooba/compute-aware-vit-thesis/data/
+output_dir: checkpoints/dense
+batch_size: 32
+epochs: 20
+learning_rate: 0.0001
+weight_decay: 0.0001
+seed: 42
+pretrained: true

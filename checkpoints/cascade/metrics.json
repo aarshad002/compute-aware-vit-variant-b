@@ -1,0 +1,4616 @@
+{
+  "model_name": "cascade",
+  "stage_flops_giga": {
+    "25": 0.491472384,
+    "50": 0.687450432,
+    "75": 0.88342848,
+    "dense": 1.079406528
+  },
+  "total_combinations": 343,
+  "best_result": {
+    "threshold_25": 0.9,
+    "threshold_50": 0.9,
+    "threshold_75": 0.9,
+    "accuracy": 0.8222,
+    "avg_flops_giga": 1.127171,
+    "budget_distribution": {
+      "25pct": 0.5847,
+      "50pct": 0.1974,
+      "75pct": 0.0718,
+      "dense_pct": 0.1461
+    }
+  },
+  "top_10_results": [
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.9,
+      "threshold_75": 0.9,
+      "accuracy": 0.8222,
+      "avg_flops_giga": 1.127171,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.1974,
+        "75pct": 0.0718,
+        "dense_pct": 0.1461
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.9,
+      "threshold_75": 0.8,
+      "accuracy": 0.8218,
+      "avg_flops_giga": 1.096084,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.1974,
+        "75pct": 0.1006,
+        "dense_pct": 0.1173
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.9,
+      "threshold_75": 0.7,
+      "accuracy": 0.8211,
+      "avg_flops_giga": 1.068667,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.1974,
+        "75pct": 0.126,
+        "dense_pct": 0.0919
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.9,
+      "threshold_75": 0.6,
+      "accuracy": 0.8188,
+      "avg_flops_giga": 1.038875,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.1974,
+        "75pct": 0.1536,
+        "dense_pct": 0.0643
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.8,
+      "threshold_75": 0.9,
+      "accuracy": 0.8183,
+      "avg_flops_giga": 1.048762,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.2484,
+        "75pct": 0.0517,
+        "dense_pct": 0.1152
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.8,
+      "threshold_75": 0.8,
+      "accuracy": 0.8177,
+      "avg_flops_giga": 1.026311,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.2484,
+        "75pct": 0.0725,
+        "dense_pct": 0.0944
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.8,
+      "threshold_75": 0.7,
+      "accuracy": 0.8173,
+      "avg_flops_giga": 1.003967,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.2484,
+        "75pct": 0.0932,
+        "dense_pct": 0.0737
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.9,
+      "threshold_75": 0.5,
+      "accuracy": 0.8169,
+      "avg_flops_giga": 1.01189,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.1974,
+        "75pct": 0.1786,
+        "dense_pct": 0.0393
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.8,
+      "threshold_75": 0.6,
+      "accuracy": 0.816,
+      "avg_flops_giga": 0.981084,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.2484,
+        "75pct": 0.1144,
+        "dense_pct": 0.0525
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.8,
+      "threshold_75": 0.5,
+      "accuracy": 0.8145,
+      "avg_flops_giga": 0.959819,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.2484,
+        "75pct": 0.1341,
+        "dense_pct": 0.0328
+      }
+    }
+  ],
+  "all_results": [
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.9,
+      "threshold_75": 0.9,
+      "accuracy": 0.8222,
+      "avg_flops_giga": 1.127171,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.1974,
+        "75pct": 0.0718,
+        "dense_pct": 0.1461
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.9,
+      "threshold_75": 0.8,
+      "accuracy": 0.8218,
+      "avg_flops_giga": 1.096084,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.1974,
+        "75pct": 0.1006,
+        "dense_pct": 0.1173
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.9,
+      "threshold_75": 0.7,
+      "accuracy": 0.8211,
+      "avg_flops_giga": 1.068667,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.1974,
+        "75pct": 0.126,
+        "dense_pct": 0.0919
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.9,
+      "threshold_75": 0.6,
+      "accuracy": 0.8188,
+      "avg_flops_giga": 1.038875,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.1974,
+        "75pct": 0.1536,
+        "dense_pct": 0.0643
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.8,
+      "threshold_75": 0.9,
+      "accuracy": 0.8183,
+      "avg_flops_giga": 1.048762,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.2484,
+        "75pct": 0.0517,
+        "dense_pct": 0.1152
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.8,
+      "threshold_75": 0.8,
+      "accuracy": 0.8177,
+      "avg_flops_giga": 1.026311,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.2484,
+        "75pct": 0.0725,
+        "dense_pct": 0.0944
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.8,
+      "threshold_75": 0.7,
+      "accuracy": 0.8173,
+      "avg_flops_giga": 1.003967,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.2484,
+        "75pct": 0.0932,
+        "dense_pct": 0.0737
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.9,
+      "threshold_75": 0.5,
+      "accuracy": 0.8169,
+      "avg_flops_giga": 1.01189,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.1974,
+        "75pct": 0.1786,
+        "dense_pct": 0.0393
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.8,
+      "threshold_75": 0.6,
+      "accuracy": 0.816,
+      "avg_flops_giga": 0.981084,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.2484,
+        "75pct": 0.1144,
+        "dense_pct": 0.0525
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.8,
+      "threshold_75": 0.5,
+      "accuracy": 0.8145,
+      "avg_flops_giga": 0.959819,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.2484,
+        "75pct": 0.1341,
+        "dense_pct": 0.0328
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.7,
+      "threshold_75": 0.9,
+      "accuracy": 0.8144,
+      "avg_flops_giga": 0.987893,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.287,
+        "75pct": 0.0379,
+        "dense_pct": 0.0904
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.7,
+      "threshold_75": 0.7,
+      "accuracy": 0.8142,
+      "avg_flops_giga": 0.95292,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.287,
+        "75pct": 0.0703,
+        "dense_pct": 0.058
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.7,
+      "threshold_75": 0.8,
+      "accuracy": 0.8141,
+      "avg_flops_giga": 0.970406,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.287,
+        "75pct": 0.0541,
+        "dense_pct": 0.0742
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.9,
+      "threshold_75": 0.4,
+      "accuracy": 0.8129,
+      "avg_flops_giga": 0.991274,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.1974,
+        "75pct": 0.1977,
+        "dense_pct": 0.0202
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.7,
+      "threshold_75": 0.6,
+      "accuracy": 0.8127,
+      "avg_flops_giga": 0.934678,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.287,
+        "75pct": 0.0872,
+        "dense_pct": 0.0411
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.9,
+      "threshold_75": 0.9,
+      "accuracy": 0.8121,
+      "avg_flops_giga": 0.995368,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.1397,
+        "75pct": 0.056,
+        "dense_pct": 0.1207
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.6,
+      "threshold_75": 0.7,
+      "accuracy": 0.8121,
+      "avg_flops_giga": 0.90733,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3215,
+        "75pct": 0.0498,
+        "dense_pct": 0.044
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.6,
+      "threshold_75": 0.8,
+      "accuracy": 0.8118,
+      "avg_flops_giga": 0.919851,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3215,
+        "75pct": 0.0382,
+        "dense_pct": 0.0556
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.9,
+      "threshold_75": 0.8,
+      "accuracy": 0.8116,
+      "avg_flops_giga": 0.971081,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.1397,
+        "75pct": 0.0785,
+        "dense_pct": 0.0982
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.7,
+      "threshold_75": 0.5,
+      "accuracy": 0.8115,
+      "avg_flops_giga": 0.918811,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.287,
+        "75pct": 0.1019,
+        "dense_pct": 0.0264
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.8,
+      "threshold_75": 0.4,
+      "accuracy": 0.8113,
+      "avg_flops_giga": 0.942981,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.2484,
+        "75pct": 0.1497,
+        "dense_pct": 0.0172
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.6,
+      "threshold_75": 0.9,
+      "accuracy": 0.8112,
+      "avg_flops_giga": 0.932156,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3215,
+        "75pct": 0.0268,
+        "dense_pct": 0.067
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.9,
+      "threshold_75": 0.7,
+      "accuracy": 0.8111,
+      "avg_flops_giga": 0.948414,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.1397,
+        "75pct": 0.0995,
+        "dense_pct": 0.0772
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.9,
+      "threshold_75": 0.3,
+      "accuracy": 0.811,
+      "avg_flops_giga": 0.977997,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.1974,
+        "75pct": 0.21,
+        "dense_pct": 0.0079
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.6,
+      "threshold_75": 0.6,
+      "accuracy": 0.8106,
+      "avg_flops_giga": 0.893945,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3215,
+        "75pct": 0.0622,
+        "dense_pct": 0.0316
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.8,
+      "threshold_75": 0.3,
+      "accuracy": 0.8102,
+      "avg_flops_giga": 0.931863,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.2484,
+        "75pct": 0.16,
+        "dense_pct": 0.0069
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.6,
+      "threshold_75": 0.5,
+      "accuracy": 0.8097,
+      "avg_flops_giga": 0.882504,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3215,
+        "75pct": 0.0728,
+        "dense_pct": 0.021
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.9,
+      "threshold_75": 0.6,
+      "accuracy": 0.8088,
+      "avg_flops_giga": 0.923371,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.1397,
+        "75pct": 0.1227,
+        "dense_pct": 0.054
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.8,
+      "threshold_75": 0.9,
+      "accuracy": 0.8087,
+      "avg_flops_giga": 0.933624,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.1799,
+        "75pct": 0.0401,
+        "dense_pct": 0.0964
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.7,
+      "threshold_75": 0.4,
+      "accuracy": 0.8087,
+      "avg_flops_giga": 0.905426,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.287,
+        "75pct": 0.1143,
+        "dense_pct": 0.014
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.8,
+      "threshold_75": 0.8,
+      "accuracy": 0.8081,
+      "avg_flops_giga": 0.91549,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.1799,
+        "75pct": 0.0569,
+        "dense_pct": 0.0796
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.6,
+      "threshold_75": 0.4,
+      "accuracy": 0.8081,
+      "avg_flops_giga": 0.872357,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3215,
+        "75pct": 0.0822,
+        "dense_pct": 0.0116
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.7,
+      "threshold_75": 0.3,
+      "accuracy": 0.8081,
+      "avg_flops_giga": 0.896467,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.287,
+        "75pct": 0.1226,
+        "dense_pct": 0.0057
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.8,
+      "threshold_75": 0.7,
+      "accuracy": 0.8078,
+      "avg_flops_giga": 0.896709,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.1799,
+        "75pct": 0.0743,
+        "dense_pct": 0.0622
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.6,
+      "threshold_75": 0.3,
+      "accuracy": 0.8077,
+      "avg_flops_giga": 0.865341,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3215,
+        "75pct": 0.0887,
+        "dense_pct": 0.0051
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.9,
+      "threshold_75": 0.5,
+      "accuracy": 0.8071,
+      "avg_flops_giga": 0.901999,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.1397,
+        "75pct": 0.1425,
+        "dense_pct": 0.0342
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.8,
+      "threshold_75": 0.6,
+      "accuracy": 0.8064,
+      "avg_flops_giga": 0.877603,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.1799,
+        "75pct": 0.092,
+        "dense_pct": 0.0445
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.7,
+      "threshold_75": 0.9,
+      "accuracy": 0.8052,
+      "avg_flops_giga": 0.884444,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2104,
+        "75pct": 0.0302,
+        "dense_pct": 0.0758
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.8,
+      "threshold_75": 0.5,
+      "accuracy": 0.805,
+      "avg_flops_giga": 0.860441,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.1799,
+        "75pct": 0.1079,
+        "dense_pct": 0.0286
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.7,
+      "threshold_75": 0.7,
+      "accuracy": 0.8049,
+      "avg_flops_giga": 0.855192,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2104,
+        "75pct": 0.0573,
+        "dense_pct": 0.0487
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.7,
+      "threshold_75": 0.8,
+      "accuracy": 0.8047,
+      "avg_flops_giga": 0.869872,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2104,
+        "75pct": 0.0437,
+        "dense_pct": 0.0623
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.6,
+      "threshold_75": 0.7,
+      "accuracy": 0.8034,
+      "avg_flops_giga": 0.817278,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2389,
+        "75pct": 0.0406,
+        "dense_pct": 0.0369
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.7,
+      "threshold_75": 0.6,
+      "accuracy": 0.8034,
+      "avg_flops_giga": 0.840081,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2104,
+        "75pct": 0.0713,
+        "dense_pct": 0.0347
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.9,
+      "threshold_75": 0.4,
+      "accuracy": 0.8034,
+      "avg_flops_giga": 0.883865,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.1397,
+        "75pct": 0.1593,
+        "dense_pct": 0.0174
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.5,
+      "threshold_75": 0.7,
+      "accuracy": 0.8033,
+      "avg_flops_giga": 0.858707,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3587,
+        "75pct": 0.0272,
+        "dense_pct": 0.0294
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.6,
+      "threshold_75": 0.8,
+      "accuracy": 0.803,
+      "avg_flops_giga": 0.827856,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2389,
+        "75pct": 0.0308,
+        "dense_pct": 0.0467
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.5,
+      "threshold_75": 0.8,
+      "accuracy": 0.8028,
+      "avg_flops_giga": 0.865831,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3587,
+        "75pct": 0.0206,
+        "dense_pct": 0.036
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.6,
+      "threshold_75": 0.9,
+      "accuracy": 0.8026,
+      "avg_flops_giga": 0.837786,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2389,
+        "75pct": 0.0216,
+        "dense_pct": 0.0559
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.5,
+      "threshold_75": 0.6,
+      "accuracy": 0.8024,
+      "avg_flops_giga": 0.850935,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3587,
+        "75pct": 0.0344,
+        "dense_pct": 0.0222
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.7,
+      "threshold_75": 0.5,
+      "accuracy": 0.8023,
+      "avg_flops_giga": 0.827451,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2104,
+        "75pct": 0.083,
+        "dense_pct": 0.023
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.5,
+      "threshold_75": 0.9,
+      "accuracy": 0.8023,
+      "avg_flops_giga": 0.871768,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3587,
+        "75pct": 0.0151,
+        "dense_pct": 0.0415
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.8,
+      "threshold_75": 0.4,
+      "accuracy": 0.8021,
+      "avg_flops_giga": 0.845545,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.1799,
+        "75pct": 0.1217,
+        "dense_pct": 0.0148
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.5,
+      "threshold_75": 0.5,
+      "accuracy": 0.802,
+      "avg_flops_giga": 0.843811,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3587,
+        "75pct": 0.041,
+        "dense_pct": 0.0156
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.9,
+      "threshold_75": 0.9,
+      "accuracy": 0.8019,
+      "avg_flops_giga": 0.89838,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.102,
+        "75pct": 0.0445,
+        "dense_pct": 0.1007
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.6,
+      "threshold_75": 0.6,
+      "accuracy": 0.8019,
+      "avg_flops_giga": 0.80616,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2389,
+        "75pct": 0.0509,
+        "dense_pct": 0.0266
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.9,
+      "threshold_75": 0.3,
+      "accuracy": 0.8019,
+      "avg_flops_giga": 0.872855,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.1397,
+        "75pct": 0.1695,
+        "dense_pct": 0.0072
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.8,
+      "threshold_75": 0.3,
+      "accuracy": 0.8014,
+      "avg_flops_giga": 0.836262,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.1799,
+        "75pct": 0.1303,
+        "dense_pct": 0.0062
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.5,
+      "threshold_75": 0.4,
+      "accuracy": 0.8014,
+      "avg_flops_giga": 0.836795,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3587,
+        "75pct": 0.0475,
+        "dense_pct": 0.0091
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.9,
+      "threshold_75": 0.8,
+      "accuracy": 0.8013,
+      "avg_flops_giga": 0.879275,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.102,
+        "75pct": 0.0622,
+        "dense_pct": 0.083
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.9,
+      "threshold_75": 0.7,
+      "accuracy": 0.801,
+      "avg_flops_giga": 0.860277,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.102,
+        "75pct": 0.0798,
+        "dense_pct": 0.0654
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.6,
+      "threshold_75": 0.5,
+      "accuracy": 0.801,
+      "avg_flops_giga": 0.797093,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2389,
+        "75pct": 0.0593,
+        "dense_pct": 0.0182
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.5,
+      "threshold_75": 0.3,
+      "accuracy": 0.8009,
+      "avg_flops_giga": 0.831506,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3587,
+        "75pct": 0.0524,
+        "dense_pct": 0.0042
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.7,
+      "threshold_75": 0.4,
+      "accuracy": 0.7999,
+      "avg_flops_giga": 0.815794,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2104,
+        "75pct": 0.0938,
+        "dense_pct": 0.0122
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.6,
+      "threshold_75": 0.4,
+      "accuracy": 0.7998,
+      "avg_flops_giga": 0.788349,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2389,
+        "75pct": 0.0674,
+        "dense_pct": 0.0101
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.6,
+      "threshold_75": 0.3,
+      "accuracy": 0.7996,
+      "avg_flops_giga": 0.782305,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2389,
+        "75pct": 0.073,
+        "dense_pct": 0.0045
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.7,
+      "threshold_75": 0.3,
+      "accuracy": 0.7994,
+      "avg_flops_giga": 0.80813,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2104,
+        "75pct": 0.1009,
+        "dense_pct": 0.0051
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.8,
+      "threshold_75": 0.9,
+      "accuracy": 0.7993,
+      "avg_flops_giga": 0.850534,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.1327,
+        "75pct": 0.033,
+        "dense_pct": 0.0815
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.8,
+      "threshold_75": 0.7,
+      "accuracy": 0.7988,
+      "avg_flops_giga": 0.820203,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.1327,
+        "75pct": 0.0611,
+        "dense_pct": 0.0534
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.8,
+      "threshold_75": 0.8,
+      "accuracy": 0.7988,
+      "avg_flops_giga": 0.83607,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.1327,
+        "75pct": 0.0464,
+        "dense_pct": 0.0681
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.9,
+      "threshold_75": 0.6,
+      "accuracy": 0.7987,
+      "avg_flops_giga": 0.839768,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.102,
+        "75pct": 0.0988,
+        "dense_pct": 0.0464
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.8,
+      "threshold_75": 0.6,
+      "accuracy": 0.7974,
+      "avg_flops_giga": 0.804336,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.1327,
+        "75pct": 0.0758,
+        "dense_pct": 0.0387
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.9,
+      "threshold_75": 0.5,
+      "accuracy": 0.7967,
+      "avg_flops_giga": 0.821203,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.102,
+        "75pct": 0.116,
+        "dense_pct": 0.0292
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.7,
+      "threshold_75": 0.7,
+      "accuracy": 0.7962,
+      "avg_flops_giga": 0.7859,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.1576,
+        "75pct": 0.0476,
+        "dense_pct": 0.042
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.7,
+      "threshold_75": 0.9,
+      "accuracy": 0.7962,
+      "avg_flops_giga": 0.810187,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.1576,
+        "75pct": 0.0251,
+        "dense_pct": 0.0645
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.5,
+      "threshold_75": 0.7,
+      "accuracy": 0.7962,
+      "avg_flops_giga": 0.777861,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2691,
+        "75pct": 0.0222,
+        "dense_pct": 0.0251
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.7,
+      "threshold_75": 0.8,
+      "accuracy": 0.7959,
+      "avg_flops_giga": 0.798637,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.1576,
+        "75pct": 0.0358,
+        "dense_pct": 0.0538
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.5,
+      "threshold_75": 0.8,
+      "accuracy": 0.7959,
+      "avg_flops_giga": 0.784014,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2691,
+        "75pct": 0.0165,
+        "dense_pct": 0.0308
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.8,
+      "threshold_75": 0.5,
+      "accuracy": 0.7957,
+      "avg_flops_giga": 0.789224,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.1327,
+        "75pct": 0.0898,
+        "dense_pct": 0.0247
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.5,
+      "threshold_75": 0.9,
+      "accuracy": 0.7954,
+      "avg_flops_giga": 0.788979,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2691,
+        "75pct": 0.0119,
+        "dense_pct": 0.0354
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.4,
+      "threshold_75": 0.7,
+      "accuracy": 0.7954,
+      "avg_flops_giga": 0.82042,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3864,
+        "75pct": 0.0123,
+        "dense_pct": 0.0166
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.4,
+      "threshold_75": 0.5,
+      "accuracy": 0.7953,
+      "avg_flops_giga": 0.812432,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3864,
+        "75pct": 0.0197,
+        "dense_pct": 0.0092
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.5,
+      "threshold_75": 0.6,
+      "accuracy": 0.7952,
+      "avg_flops_giga": 0.771385,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2691,
+        "75pct": 0.0282,
+        "dense_pct": 0.0191
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.4,
+      "threshold_75": 0.6,
+      "accuracy": 0.7952,
+      "avg_flops_giga": 0.816426,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3864,
+        "75pct": 0.016,
+        "dense_pct": 0.0129
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.4,
+      "threshold_75": 0.3,
+      "accuracy": 0.7951,
+      "avg_flops_giga": 0.805416,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3864,
+        "75pct": 0.0262,
+        "dense_pct": 0.0027
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.4,
+      "threshold_75": 0.4,
+      "accuracy": 0.7951,
+      "avg_flops_giga": 0.808762,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3864,
+        "75pct": 0.0231,
+        "dense_pct": 0.0058
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.4,
+      "threshold_75": 0.8,
+      "accuracy": 0.7951,
+      "avg_flops_giga": 0.823982,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3864,
+        "75pct": 0.009,
+        "dense_pct": 0.0199
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.5,
+      "threshold_75": 0.5,
+      "accuracy": 0.7949,
+      "avg_flops_giga": 0.765448,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2691,
+        "75pct": 0.0337,
+        "dense_pct": 0.0136
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.4,
+      "threshold_75": 0.9,
+      "accuracy": 0.7949,
+      "avg_flops_giga": 0.826896,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.3864,
+        "75pct": 0.0063,
+        "dense_pct": 0.0226
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.7,
+      "threshold_75": 0.6,
+      "accuracy": 0.7948,
+      "avg_flops_giga": 0.773487,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.1576,
+        "75pct": 0.0591,
+        "dense_pct": 0.0305
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.5,
+      "threshold_75": 0.4,
+      "accuracy": 0.7945,
+      "avg_flops_giga": 0.759403,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2691,
+        "75pct": 0.0393,
+        "dense_pct": 0.008
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.5,
+      "threshold_75": 0.3,
+      "accuracy": 0.7942,
+      "avg_flops_giga": 0.754762,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2691,
+        "75pct": 0.0436,
+        "dense_pct": 0.0037
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.6,
+      "threshold_75": 0.7,
+      "accuracy": 0.7941,
+      "avg_flops_giga": 0.754542,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.181,
+        "75pct": 0.0341,
+        "dense_pct": 0.0321
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.6,
+      "threshold_75": 0.8,
+      "accuracy": 0.7936,
+      "avg_flops_giga": 0.763825,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.181,
+        "75pct": 0.0255,
+        "dense_pct": 0.0407
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.7,
+      "threshold_75": 0.5,
+      "accuracy": 0.7936,
+      "avg_flops_giga": 0.762261,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.1576,
+        "75pct": 0.0695,
+        "dense_pct": 0.0201
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.9,
+      "threshold_75": 0.4,
+      "accuracy": 0.7936,
+      "avg_flops_giga": 0.805335,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.102,
+        "75pct": 0.1307,
+        "dense_pct": 0.0145
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.6,
+      "threshold_75": 0.9,
+      "accuracy": 0.7934,
+      "avg_flops_giga": 0.771813,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.181,
+        "75pct": 0.0181,
+        "dense_pct": 0.0481
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.8,
+      "threshold_75": 0.4,
+      "accuracy": 0.7931,
+      "avg_flops_giga": 0.775731,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.1327,
+        "75pct": 0.1023,
+        "dense_pct": 0.0122
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.6,
+      "threshold_75": 0.6,
+      "accuracy": 0.7928,
+      "avg_flops_giga": 0.745367,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.181,
+        "75pct": 0.0426,
+        "dense_pct": 0.0236
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.8,
+      "threshold_75": 0.3,
+      "accuracy": 0.7921,
+      "avg_flops_giga": 0.768068,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.1327,
+        "75pct": 0.1094,
+        "dense_pct": 0.0051
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.9,
+      "threshold_75": 0.3,
+      "accuracy": 0.7919,
+      "avg_flops_giga": 0.79616,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.102,
+        "75pct": 0.1392,
+        "dense_pct": 0.006
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.6,
+      "threshold_75": 0.5,
+      "accuracy": 0.7918,
+      "avg_flops_giga": 0.737164,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.181,
+        "75pct": 0.0502,
+        "dense_pct": 0.016
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.7,
+      "threshold_75": 0.4,
+      "accuracy": 0.7915,
+      "avg_flops_giga": 0.751467,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.1576,
+        "75pct": 0.0795,
+        "dense_pct": 0.0101
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.3,
+      "threshold_75": 0.3,
+      "accuracy": 0.791,
+      "avg_flops_giga": 0.788396,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.4042,
+        "75pct": 0.0096,
+        "dense_pct": 0.0015
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.3,
+      "threshold_75": 0.4,
+      "accuracy": 0.791,
+      "avg_flops_giga": 0.789691,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.4042,
+        "75pct": 0.0084,
+        "dense_pct": 0.0027
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.3,
+      "threshold_75": 0.8,
+      "accuracy": 0.791,
+      "avg_flops_giga": 0.795412,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.4042,
+        "75pct": 0.0031,
+        "dense_pct": 0.008
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.3,
+      "threshold_75": 0.7,
+      "accuracy": 0.7909,
+      "avg_flops_giga": 0.794332,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.4042,
+        "75pct": 0.0041,
+        "dense_pct": 0.007
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.6,
+      "threshold_75": 0.4,
+      "accuracy": 0.7908,
+      "avg_flops_giga": 0.72896,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.181,
+        "75pct": 0.0578,
+        "dense_pct": 0.0084
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.7,
+      "threshold_75": 0.3,
+      "accuracy": 0.7908,
+      "avg_flops_giga": 0.745099,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.1576,
+        "75pct": 0.0854,
+        "dense_pct": 0.0042
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.3,
+      "threshold_75": 0.5,
+      "accuracy": 0.7908,
+      "avg_flops_giga": 0.79131,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.4042,
+        "75pct": 0.0069,
+        "dense_pct": 0.0042
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.3,
+      "threshold_75": 0.9,
+      "accuracy": 0.7908,
+      "avg_flops_giga": 0.796383,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.4042,
+        "75pct": 0.0022,
+        "dense_pct": 0.0089
+      }
+    },
+    {
+      "threshold_25": 0.9,
+      "threshold_50": 0.3,
+      "threshold_75": 0.6,
+      "accuracy": 0.7907,
+      "avg_flops_giga": 0.793253,
+      "budget_distribution": {
+        "25pct": 0.5847,
+        "50pct": 0.4042,
+        "75pct": 0.0051,
+        "dense_pct": 0.006
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.6,
+      "threshold_75": 0.3,
+      "accuracy": 0.7905,
+      "avg_flops_giga": 0.723887,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.181,
+        "75pct": 0.0625,
+        "dense_pct": 0.0037
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.9,
+      "threshold_75": 0.9,
+      "accuracy": 0.7901,
+      "avg_flops_giga": 0.802465,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.0709,
+        "75pct": 0.034,
+        "dense_pct": 0.0788
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.4,
+      "threshold_75": 0.5,
+      "accuracy": 0.7899,
+      "avg_flops_giga": 0.739438,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2917,
+        "75pct": 0.0167,
+        "dense_pct": 0.008
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.4,
+      "threshold_75": 0.7,
+      "accuracy": 0.7899,
+      "avg_flops_giga": 0.746238,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2917,
+        "75pct": 0.0104,
+        "dense_pct": 0.0143
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.4,
+      "threshold_75": 0.4,
+      "accuracy": 0.7898,
+      "avg_flops_giga": 0.736307,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2917,
+        "75pct": 0.0196,
+        "dense_pct": 0.0051
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.4,
+      "threshold_75": 0.6,
+      "accuracy": 0.7898,
+      "avg_flops_giga": 0.742784,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2917,
+        "75pct": 0.0136,
+        "dense_pct": 0.0111
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.4,
+      "threshold_75": 0.3,
+      "accuracy": 0.7897,
+      "avg_flops_giga": 0.733285,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2917,
+        "75pct": 0.0224,
+        "dense_pct": 0.0023
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.4,
+      "threshold_75": 0.8,
+      "accuracy": 0.7896,
+      "avg_flops_giga": 0.74926,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2917,
+        "75pct": 0.0076,
+        "dense_pct": 0.0171
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.4,
+      "threshold_75": 0.9,
+      "accuracy": 0.7894,
+      "avg_flops_giga": 0.751959,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.2917,
+        "75pct": 0.0051,
+        "dense_pct": 0.0196
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.9,
+      "threshold_75": 0.8,
+      "accuracy": 0.7893,
+      "avg_flops_giga": 0.788001,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.0709,
+        "75pct": 0.0474,
+        "dense_pct": 0.0654
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.9,
+      "threshold_75": 0.7,
+      "accuracy": 0.789,
+      "avg_flops_giga": 0.772457,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.0709,
+        "75pct": 0.0618,
+        "dense_pct": 0.051
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.5,
+      "threshold_75": 0.7,
+      "accuracy": 0.7884,
+      "avg_flops_giga": 0.722104,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2055,
+        "75pct": 0.0196,
+        "dense_pct": 0.0221
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.8,
+      "threshold_75": 0.9,
+      "accuracy": 0.7881,
+      "avg_flops_giga": 0.764738,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.0954,
+        "75pct": 0.0244,
+        "dense_pct": 0.0639
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.5,
+      "threshold_75": 0.8,
+      "accuracy": 0.7881,
+      "avg_flops_giga": 0.727717,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2055,
+        "75pct": 0.0144,
+        "dense_pct": 0.0273
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.5,
+      "threshold_75": 0.6,
+      "accuracy": 0.7876,
+      "avg_flops_giga": 0.716491,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2055,
+        "75pct": 0.0248,
+        "dense_pct": 0.0169
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.5,
+      "threshold_75": 0.9,
+      "accuracy": 0.7876,
+      "avg_flops_giga": 0.73225,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2055,
+        "75pct": 0.0102,
+        "dense_pct": 0.0315
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.8,
+      "threshold_75": 0.7,
+      "accuracy": 0.7875,
+      "avg_flops_giga": 0.740451,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.0954,
+        "75pct": 0.0469,
+        "dense_pct": 0.0414
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.8,
+      "threshold_75": 0.8,
+      "accuracy": 0.7875,
+      "avg_flops_giga": 0.753512,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.0954,
+        "75pct": 0.0348,
+        "dense_pct": 0.0535
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.9,
+      "threshold_75": 0.6,
+      "accuracy": 0.7872,
+      "avg_flops_giga": 0.757022,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.0709,
+        "75pct": 0.0761,
+        "dense_pct": 0.0367
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.5,
+      "threshold_75": 0.5,
+      "accuracy": 0.7872,
+      "avg_flops_giga": 0.711202,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2055,
+        "75pct": 0.0297,
+        "dense_pct": 0.012
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.5,
+      "threshold_75": 0.4,
+      "accuracy": 0.7868,
+      "avg_flops_giga": 0.705373,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2055,
+        "75pct": 0.0351,
+        "dense_pct": 0.0066
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.3,
+      "threshold_75": 0.3,
+      "accuracy": 0.7865,
+      "avg_flops_giga": 0.718581,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.307,
+        "75pct": 0.0082,
+        "dense_pct": 0.0012
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.3,
+      "threshold_75": 0.4,
+      "accuracy": 0.7865,
+      "avg_flops_giga": 0.719877,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.307,
+        "75pct": 0.007,
+        "dense_pct": 0.0024
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.5,
+      "threshold_75": 0.3,
+      "accuracy": 0.7864,
+      "avg_flops_giga": 0.701487,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2055,
+        "75pct": 0.0387,
+        "dense_pct": 0.003
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.8,
+      "threshold_75": 0.6,
+      "accuracy": 0.7863,
+      "avg_flops_giga": 0.728794,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.0954,
+        "75pct": 0.0577,
+        "dense_pct": 0.0306
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.3,
+      "threshold_75": 0.5,
+      "accuracy": 0.7862,
+      "avg_flops_giga": 0.72128,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.307,
+        "75pct": 0.0057,
+        "dense_pct": 0.0037
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.3,
+      "threshold_75": 0.6,
+      "accuracy": 0.7861,
+      "avg_flops_giga": 0.723007,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.307,
+        "75pct": 0.0041,
+        "dense_pct": 0.0053
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.3,
+      "threshold_75": 0.7,
+      "accuracy": 0.7861,
+      "avg_flops_giga": 0.72387,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.307,
+        "75pct": 0.0033,
+        "dense_pct": 0.0061
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.3,
+      "threshold_75": 0.8,
+      "accuracy": 0.7861,
+      "avg_flops_giga": 0.724734,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.307,
+        "75pct": 0.0025,
+        "dense_pct": 0.0069
+      }
+    },
+    {
+      "threshold_25": 0.8,
+      "threshold_50": 0.3,
+      "threshold_75": 0.9,
+      "accuracy": 0.7859,
+      "avg_flops_giga": 0.725489,
+      "budget_distribution": {
+        "25pct": 0.6836,
+        "50pct": 0.307,
+        "75pct": 0.0018,
+        "dense_pct": 0.0076
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.9,
+      "threshold_75": 0.5,
+      "accuracy": 0.7854,
+      "avg_flops_giga": 0.743098,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.0709,
+        "75pct": 0.089,
+        "dense_pct": 0.0238
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.8,
+      "threshold_75": 0.5,
+      "accuracy": 0.7849,
+      "avg_flops_giga": 0.717568,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.0954,
+        "75pct": 0.0681,
+        "dense_pct": 0.0202
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.7,
+      "threshold_75": 0.9,
+      "accuracy": 0.7848,
+      "avg_flops_giga": 0.73342,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1146,
+        "75pct": 0.0185,
+        "dense_pct": 0.0506
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.7,
+      "threshold_75": 0.7,
+      "accuracy": 0.7847,
+      "avg_flops_giga": 0.713991,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1146,
+        "75pct": 0.0365,
+        "dense_pct": 0.0326
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.7,
+      "threshold_75": 0.8,
+      "accuracy": 0.7844,
+      "avg_flops_giga": 0.724569,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1146,
+        "75pct": 0.0267,
+        "dense_pct": 0.0424
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.6,
+      "threshold_75": 0.7,
+      "accuracy": 0.7836,
+      "avg_flops_giga": 0.691986,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1312,
+        "75pct": 0.0267,
+        "dense_pct": 0.0258
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.7,
+      "threshold_75": 0.6,
+      "accuracy": 0.7836,
+      "avg_flops_giga": 0.7046,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1146,
+        "75pct": 0.0452,
+        "dense_pct": 0.0239
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.9,
+      "threshold_75": 0.4,
+      "accuracy": 0.7833,
+      "avg_flops_giga": 0.730469,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.0709,
+        "75pct": 0.1007,
+        "dense_pct": 0.0121
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.6,
+      "threshold_75": 0.8,
+      "accuracy": 0.7832,
+      "avg_flops_giga": 0.699542,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1312,
+        "75pct": 0.0197,
+        "dense_pct": 0.0328
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.8,
+      "threshold_75": 0.4,
+      "accuracy": 0.7831,
+      "avg_flops_giga": 0.706774,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.0954,
+        "75pct": 0.0781,
+        "dense_pct": 0.0102
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.6,
+      "threshold_75": 0.9,
+      "accuracy": 0.783,
+      "avg_flops_giga": 0.706234,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1312,
+        "75pct": 0.0135,
+        "dense_pct": 0.039
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.6,
+      "threshold_75": 0.6,
+      "accuracy": 0.7828,
+      "avg_flops_giga": 0.684754,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1312,
+        "75pct": 0.0334,
+        "dense_pct": 0.0191
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.4,
+      "threshold_75": 0.5,
+      "accuracy": 0.7827,
+      "avg_flops_giga": 0.688441,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2254,
+        "75pct": 0.0146,
+        "dense_pct": 0.0072
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.4,
+      "threshold_75": 0.6,
+      "accuracy": 0.7827,
+      "avg_flops_giga": 0.691355,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2254,
+        "75pct": 0.0119,
+        "dense_pct": 0.0099
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.4,
+      "threshold_75": 0.7,
+      "accuracy": 0.7827,
+      "avg_flops_giga": 0.694377,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2254,
+        "75pct": 0.0091,
+        "dense_pct": 0.0127
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.4,
+      "threshold_75": 0.4,
+      "accuracy": 0.7826,
+      "avg_flops_giga": 0.68531,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2254,
+        "75pct": 0.0175,
+        "dense_pct": 0.0043
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.7,
+      "threshold_75": 0.5,
+      "accuracy": 0.7825,
+      "avg_flops_giga": 0.696288,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1146,
+        "75pct": 0.0529,
+        "dense_pct": 0.0162
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.4,
+      "threshold_75": 0.3,
+      "accuracy": 0.7824,
+      "avg_flops_giga": 0.68272,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2254,
+        "75pct": 0.0199,
+        "dense_pct": 0.0019
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.4,
+      "threshold_75": 0.8,
+      "accuracy": 0.7823,
+      "avg_flops_giga": 0.697076,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2254,
+        "75pct": 0.0066,
+        "dense_pct": 0.0152
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.8,
+      "threshold_75": 0.3,
+      "accuracy": 0.7822,
+      "avg_flops_giga": 0.700621,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.0954,
+        "75pct": 0.0838,
+        "dense_pct": 0.0045
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.4,
+      "threshold_75": 0.9,
+      "accuracy": 0.7821,
+      "avg_flops_giga": 0.699343,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2254,
+        "75pct": 0.0045,
+        "dense_pct": 0.0173
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.6,
+      "threshold_75": 0.5,
+      "accuracy": 0.7819,
+      "avg_flops_giga": 0.678385,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1312,
+        "75pct": 0.0393,
+        "dense_pct": 0.0132
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.9,
+      "threshold_75": 0.3,
+      "accuracy": 0.7818,
+      "avg_flops_giga": 0.723129,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.0709,
+        "75pct": 0.1075,
+        "dense_pct": 0.0053
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.6,
+      "threshold_75": 0.4,
+      "accuracy": 0.7813,
+      "avg_flops_giga": 0.671585,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1312,
+        "75pct": 0.0456,
+        "dense_pct": 0.0069
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.7,
+      "threshold_75": 0.4,
+      "accuracy": 0.7811,
+      "avg_flops_giga": 0.687653,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1146,
+        "75pct": 0.0609,
+        "dense_pct": 0.0082
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.6,
+      "threshold_75": 0.3,
+      "accuracy": 0.7809,
+      "avg_flops_giga": 0.667483,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1312,
+        "75pct": 0.0494,
+        "dense_pct": 0.0031
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.7,
+      "threshold_75": 0.3,
+      "accuracy": 0.7805,
+      "avg_flops_giga": 0.682688,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1146,
+        "75pct": 0.0655,
+        "dense_pct": 0.0036
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.5,
+      "threshold_75": 0.7,
+      "accuracy": 0.7798,
+      "avg_flops_giga": 0.666281,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1504,
+        "75pct": 0.0156,
+        "dense_pct": 0.0177
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.5,
+      "threshold_75": 0.8,
+      "accuracy": 0.7794,
+      "avg_flops_giga": 0.671246,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1504,
+        "75pct": 0.011,
+        "dense_pct": 0.0223
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.3,
+      "threshold_75": 0.4,
+      "accuracy": 0.7794,
+      "avg_flops_giga": 0.670901,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2389,
+        "75pct": 0.0063,
+        "dense_pct": 0.002
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.5,
+      "threshold_75": 0.6,
+      "accuracy": 0.7793,
+      "avg_flops_giga": 0.661639,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1504,
+        "75pct": 0.0199,
+        "dense_pct": 0.0134
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.3,
+      "threshold_75": 0.3,
+      "accuracy": 0.7793,
+      "avg_flops_giga": 0.669822,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2389,
+        "75pct": 0.0073,
+        "dense_pct": 0.001
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.3,
+      "threshold_75": 0.5,
+      "accuracy": 0.7791,
+      "avg_flops_giga": 0.672305,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2389,
+        "75pct": 0.005,
+        "dense_pct": 0.0033
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.3,
+      "threshold_75": 0.6,
+      "accuracy": 0.779,
+      "avg_flops_giga": 0.673816,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2389,
+        "75pct": 0.0036,
+        "dense_pct": 0.0047
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.3,
+      "threshold_75": 0.7,
+      "accuracy": 0.779,
+      "avg_flops_giga": 0.674679,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2389,
+        "75pct": 0.0028,
+        "dense_pct": 0.0055
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.3,
+      "threshold_75": 0.8,
+      "accuracy": 0.779,
+      "avg_flops_giga": 0.675543,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2389,
+        "75pct": 0.002,
+        "dense_pct": 0.0063
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.5,
+      "threshold_75": 0.9,
+      "accuracy": 0.7789,
+      "avg_flops_giga": 0.675348,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1504,
+        "75pct": 0.0072,
+        "dense_pct": 0.0261
+      }
+    },
+    {
+      "threshold_25": 0.7,
+      "threshold_50": 0.3,
+      "threshold_75": 0.9,
+      "accuracy": 0.7789,
+      "avg_flops_giga": 0.676083,
+      "budget_distribution": {
+        "25pct": 0.7528,
+        "50pct": 0.2389,
+        "75pct": 0.0015,
+        "dense_pct": 0.0068
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.5,
+      "threshold_75": 0.5,
+      "accuracy": 0.7788,
+      "avg_flops_giga": 0.657645,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1504,
+        "75pct": 0.0236,
+        "dense_pct": 0.0097
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.5,
+      "threshold_75": 0.4,
+      "accuracy": 0.7787,
+      "avg_flops_giga": 0.652896,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1504,
+        "75pct": 0.028,
+        "dense_pct": 0.0053
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.5,
+      "threshold_75": 0.3,
+      "accuracy": 0.7782,
+      "avg_flops_giga": 0.649766,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1504,
+        "75pct": 0.0309,
+        "dense_pct": 0.0024
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.4,
+      "threshold_75": 0.4,
+      "accuracy": 0.7751,
+      "avg_flops_giga": 0.637476,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1659,
+        "75pct": 0.0141,
+        "dense_pct": 0.0037
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.4,
+      "threshold_75": 0.6,
+      "accuracy": 0.7751,
+      "avg_flops_giga": 0.642225,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1659,
+        "75pct": 0.0097,
+        "dense_pct": 0.0081
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.4,
+      "threshold_75": 0.7,
+      "accuracy": 0.7751,
+      "avg_flops_giga": 0.645032,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1659,
+        "75pct": 0.0071,
+        "dense_pct": 0.0107
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.4,
+      "threshold_75": 0.5,
+      "accuracy": 0.775,
+      "avg_flops_giga": 0.640066,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1659,
+        "75pct": 0.0117,
+        "dense_pct": 0.0061
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.4,
+      "threshold_75": 0.3,
+      "accuracy": 0.7749,
+      "avg_flops_giga": 0.635209,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1659,
+        "75pct": 0.0162,
+        "dense_pct": 0.0016
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.4,
+      "threshold_75": 0.8,
+      "accuracy": 0.7747,
+      "avg_flops_giga": 0.647406,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1659,
+        "75pct": 0.0049,
+        "dense_pct": 0.0129
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.4,
+      "threshold_75": 0.9,
+      "accuracy": 0.7745,
+      "avg_flops_giga": 0.649241,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.1659,
+        "75pct": 0.0032,
+        "dense_pct": 0.0146
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.9,
+      "threshold_75": 0.9,
+      "accuracy": 0.7735,
+      "avg_flops_giga": 0.700131,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.042,
+        "75pct": 0.0225,
+        "dense_pct": 0.0545
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.9,
+      "threshold_75": 0.8,
+      "accuracy": 0.7724,
+      "avg_flops_giga": 0.689984,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.042,
+        "75pct": 0.0319,
+        "dense_pct": 0.0451
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.9,
+      "threshold_75": 0.7,
+      "accuracy": 0.7723,
+      "avg_flops_giga": 0.679406,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.042,
+        "75pct": 0.0417,
+        "dense_pct": 0.0353
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.3,
+      "threshold_75": 0.4,
+      "accuracy": 0.7723,
+      "avg_flops_giga": 0.625619,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.177,
+        "75pct": 0.0049,
+        "dense_pct": 0.0018
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.8,
+      "threshold_75": 0.9,
+      "accuracy": 0.7722,
+      "avg_flops_giga": 0.675368,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0583,
+        "75pct": 0.0158,
+        "dense_pct": 0.0449
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.3,
+      "threshold_75": 0.3,
+      "accuracy": 0.7722,
+      "avg_flops_giga": 0.62454,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.177,
+        "75pct": 0.0059,
+        "dense_pct": 0.0008
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.3,
+      "threshold_75": 0.5,
+      "accuracy": 0.772,
+      "avg_flops_giga": 0.626806,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.177,
+        "75pct": 0.0038,
+        "dense_pct": 0.0029
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.3,
+      "threshold_75": 0.6,
+      "accuracy": 0.772,
+      "avg_flops_giga": 0.627886,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.177,
+        "75pct": 0.0028,
+        "dense_pct": 0.0039
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.3,
+      "threshold_75": 0.7,
+      "accuracy": 0.772,
+      "avg_flops_giga": 0.628749,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.177,
+        "75pct": 0.002,
+        "dense_pct": 0.0047
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.3,
+      "threshold_75": 0.8,
+      "accuracy": 0.772,
+      "avg_flops_giga": 0.629505,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.177,
+        "75pct": 0.0013,
+        "dense_pct": 0.0054
+      }
+    },
+    {
+      "threshold_25": 0.6,
+      "threshold_50": 0.3,
+      "threshold_75": 0.9,
+      "accuracy": 0.7719,
+      "avg_flops_giga": 0.629829,
+      "budget_distribution": {
+        "25pct": 0.8163,
+        "50pct": 0.177,
+        "75pct": 0.001,
+        "dense_pct": 0.0057
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.8,
+      "threshold_75": 0.7,
+      "accuracy": 0.7715,
+      "avg_flops_giga": 0.658422,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0583,
+        "75pct": 0.0315,
+        "dense_pct": 0.0292
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.8,
+      "threshold_75": 0.8,
+      "accuracy": 0.7715,
+      "avg_flops_giga": 0.667489,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0583,
+        "75pct": 0.0231,
+        "dense_pct": 0.0376
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.9,
+      "threshold_75": 0.6,
+      "accuracy": 0.7712,
+      "avg_flops_giga": 0.669583,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.042,
+        "75pct": 0.0508,
+        "dense_pct": 0.0262
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.8,
+      "threshold_75": 0.6,
+      "accuracy": 0.7707,
+      "avg_flops_giga": 0.650866,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0583,
+        "75pct": 0.0385,
+        "dense_pct": 0.0222
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.7,
+      "threshold_75": 0.9,
+      "accuracy": 0.7703,
+      "avg_flops_giga": 0.655592,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0703,
+        "75pct": 0.0123,
+        "dense_pct": 0.0364
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.9,
+      "threshold_75": 0.5,
+      "accuracy": 0.7702,
+      "avg_flops_giga": 0.660624,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.042,
+        "75pct": 0.0591,
+        "dense_pct": 0.0179
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.8,
+      "threshold_75": 0.5,
+      "accuracy": 0.7701,
+      "avg_flops_giga": 0.643418,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0583,
+        "75pct": 0.0454,
+        "dense_pct": 0.0153
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.7,
+      "threshold_75": 0.7,
+      "accuracy": 0.77,
+      "avg_flops_giga": 0.641344,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0703,
+        "75pct": 0.0255,
+        "dense_pct": 0.0232
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.7,
+      "threshold_75": 0.8,
+      "accuracy": 0.7698,
+      "avg_flops_giga": 0.649116,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0703,
+        "75pct": 0.0183,
+        "dense_pct": 0.0304
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.6,
+      "threshold_75": 0.7,
+      "accuracy": 0.7693,
+      "avg_flops_giga": 0.626308,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0817,
+        "75pct": 0.0187,
+        "dense_pct": 0.0186
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.7,
+      "threshold_75": 0.6,
+      "accuracy": 0.7693,
+      "avg_flops_giga": 0.635192,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0703,
+        "75pct": 0.0312,
+        "dense_pct": 0.0175
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.6,
+      "threshold_75": 0.8,
+      "accuracy": 0.769,
+      "avg_flops_giga": 0.632029,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0817,
+        "75pct": 0.0134,
+        "dense_pct": 0.0239
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.6,
+      "threshold_75": 0.9,
+      "accuracy": 0.769,
+      "avg_flops_giga": 0.636886,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0817,
+        "75pct": 0.0089,
+        "dense_pct": 0.0284
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.8,
+      "threshold_75": 0.4,
+      "accuracy": 0.7689,
+      "avg_flops_giga": 0.63597,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0583,
+        "75pct": 0.0523,
+        "dense_pct": 0.0084
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.9,
+      "threshold_75": 0.4,
+      "accuracy": 0.7689,
+      "avg_flops_giga": 0.651773,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.042,
+        "75pct": 0.0673,
+        "dense_pct": 0.0097
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.7,
+      "threshold_75": 0.5,
+      "accuracy": 0.7688,
+      "avg_flops_giga": 0.629795,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0703,
+        "75pct": 0.0362,
+        "dense_pct": 0.0125
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.6,
+      "threshold_75": 0.6,
+      "accuracy": 0.7687,
+      "avg_flops_giga": 0.621774,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0817,
+        "75pct": 0.0229,
+        "dense_pct": 0.0144
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.8,
+      "threshold_75": 0.3,
+      "accuracy": 0.7684,
+      "avg_flops_giga": 0.631113,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0583,
+        "75pct": 0.0568,
+        "dense_pct": 0.0039
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.6,
+      "threshold_75": 0.5,
+      "accuracy": 0.7682,
+      "avg_flops_giga": 0.617349,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0817,
+        "75pct": 0.027,
+        "dense_pct": 0.0103
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.9,
+      "threshold_75": 0.3,
+      "accuracy": 0.7681,
+      "avg_flops_giga": 0.64616,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.042,
+        "75pct": 0.0725,
+        "dense_pct": 0.0045
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.6,
+      "threshold_75": 0.4,
+      "accuracy": 0.7679,
+      "avg_flops_giga": 0.612491,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0817,
+        "75pct": 0.0315,
+        "dense_pct": 0.0058
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.7,
+      "threshold_75": 0.4,
+      "accuracy": 0.7679,
+      "avg_flops_giga": 0.623642,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0703,
+        "75pct": 0.0419,
+        "dense_pct": 0.0068
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.6,
+      "threshold_75": 0.3,
+      "accuracy": 0.7677,
+      "avg_flops_giga": 0.609361,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0817,
+        "75pct": 0.0344,
+        "dense_pct": 0.0029
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.7,
+      "threshold_75": 0.3,
+      "accuracy": 0.7676,
+      "avg_flops_giga": 0.619756,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0703,
+        "75pct": 0.0455,
+        "dense_pct": 0.0032
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.5,
+      "threshold_75": 0.7,
+      "accuracy": 0.7671,
+      "avg_flops_giga": 0.609348,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0943,
+        "75pct": 0.0115,
+        "dense_pct": 0.0132
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.5,
+      "threshold_75": 0.8,
+      "accuracy": 0.7668,
+      "avg_flops_giga": 0.613018,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0943,
+        "75pct": 0.0081,
+        "dense_pct": 0.0166
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.5,
+      "threshold_75": 0.6,
+      "accuracy": 0.7666,
+      "avg_flops_giga": 0.606541,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0943,
+        "75pct": 0.0141,
+        "dense_pct": 0.0106
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.5,
+      "threshold_75": 0.9,
+      "accuracy": 0.7666,
+      "avg_flops_giga": 0.615824,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0943,
+        "75pct": 0.0055,
+        "dense_pct": 0.0192
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.5,
+      "threshold_75": 0.4,
+      "accuracy": 0.7665,
+      "avg_flops_giga": 0.600065,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0943,
+        "75pct": 0.0201,
+        "dense_pct": 0.0046
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.5,
+      "threshold_75": 0.5,
+      "accuracy": 0.7665,
+      "avg_flops_giga": 0.603735,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0943,
+        "75pct": 0.0167,
+        "dense_pct": 0.008
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.5,
+      "threshold_75": 0.3,
+      "accuracy": 0.7662,
+      "avg_flops_giga": 0.597582,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.0943,
+        "75pct": 0.0224,
+        "dense_pct": 0.0023
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.4,
+      "threshold_75": 0.4,
+      "accuracy": 0.7637,
+      "avg_flops_giga": 0.588218,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.106,
+        "75pct": 0.0098,
+        "dense_pct": 0.0032
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.4,
+      "threshold_75": 0.3,
+      "accuracy": 0.7636,
+      "avg_flops_giga": 0.586491,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.106,
+        "75pct": 0.0114,
+        "dense_pct": 0.0016
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.4,
+      "threshold_75": 0.5,
+      "accuracy": 0.7636,
+      "avg_flops_giga": 0.590053,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.106,
+        "75pct": 0.0081,
+        "dense_pct": 0.0049
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.4,
+      "threshold_75": 0.6,
+      "accuracy": 0.7636,
+      "avg_flops_giga": 0.591672,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.106,
+        "75pct": 0.0066,
+        "dense_pct": 0.0064
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.4,
+      "threshold_75": 0.7,
+      "accuracy": 0.7635,
+      "avg_flops_giga": 0.593291,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.106,
+        "75pct": 0.0051,
+        "dense_pct": 0.0079
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.4,
+      "threshold_75": 0.8,
+      "accuracy": 0.7632,
+      "avg_flops_giga": 0.594802,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.106,
+        "75pct": 0.0037,
+        "dense_pct": 0.0093
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.4,
+      "threshold_75": 0.9,
+      "accuracy": 0.7631,
+      "avg_flops_giga": 0.596205,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.106,
+        "75pct": 0.0024,
+        "dense_pct": 0.0106
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.3,
+      "threshold_75": 0.3,
+      "accuracy": 0.7615,
+      "avg_flops_giga": 0.578913,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.1136,
+        "75pct": 0.0046,
+        "dense_pct": 0.0008
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.3,
+      "threshold_75": 0.4,
+      "accuracy": 0.7615,
+      "avg_flops_giga": 0.579777,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.1136,
+        "75pct": 0.0038,
+        "dense_pct": 0.0016
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.3,
+      "threshold_75": 0.5,
+      "accuracy": 0.7612,
+      "avg_flops_giga": 0.58064,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.1136,
+        "75pct": 0.003,
+        "dense_pct": 0.0024
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.3,
+      "threshold_75": 0.6,
+      "accuracy": 0.7612,
+      "avg_flops_giga": 0.581504,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.1136,
+        "75pct": 0.0022,
+        "dense_pct": 0.0032
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.3,
+      "threshold_75": 0.7,
+      "accuracy": 0.7612,
+      "avg_flops_giga": 0.582259,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.1136,
+        "75pct": 0.0015,
+        "dense_pct": 0.0039
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.3,
+      "threshold_75": 0.8,
+      "accuracy": 0.7611,
+      "avg_flops_giga": 0.582799,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.1136,
+        "75pct": 0.001,
+        "dense_pct": 0.0044
+      }
+    },
+    {
+      "threshold_25": 0.5,
+      "threshold_50": 0.3,
+      "threshold_75": 0.9,
+      "accuracy": 0.761,
+      "avg_flops_giga": 0.583015,
+      "budget_distribution": {
+        "25pct": 0.881,
+        "50pct": 0.1136,
+        "75pct": 0.0008,
+        "dense_pct": 0.0046
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.9,
+      "threshold_75": 0.9,
+      "accuracy": 0.7593,
+      "avg_flops_giga": 0.608793,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0189,
+        "75pct": 0.0131,
+        "dense_pct": 0.0316
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.8,
+      "threshold_75": 0.9,
+      "accuracy": 0.7591,
+      "avg_flops_giga": 0.593482,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0289,
+        "75pct": 0.0091,
+        "dense_pct": 0.0256
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.8,
+      "threshold_75": 0.7,
+      "accuracy": 0.7586,
+      "avg_flops_giga": 0.584631,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0289,
+        "75pct": 0.0173,
+        "dense_pct": 0.0174
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.9,
+      "threshold_75": 0.8,
+      "accuracy": 0.7586,
+      "avg_flops_giga": 0.602856,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0189,
+        "75pct": 0.0186,
+        "dense_pct": 0.0261
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.8,
+      "threshold_75": 0.8,
+      "accuracy": 0.7585,
+      "avg_flops_giga": 0.588625,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0289,
+        "75pct": 0.0136,
+        "dense_pct": 0.0211
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.9,
+      "threshold_75": 0.7,
+      "accuracy": 0.7585,
+      "avg_flops_giga": 0.597783,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0189,
+        "75pct": 0.0233,
+        "dense_pct": 0.0214
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.8,
+      "threshold_75": 0.6,
+      "accuracy": 0.758,
+      "avg_flops_giga": 0.580097,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0289,
+        "75pct": 0.0215,
+        "dense_pct": 0.0132
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.7,
+      "threshold_75": 0.9,
+      "accuracy": 0.7579,
+      "avg_flops_giga": 0.583255,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0351,
+        "75pct": 0.0073,
+        "dense_pct": 0.0212
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.9,
+      "threshold_75": 0.6,
+      "accuracy": 0.7579,
+      "avg_flops_giga": 0.592062,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0189,
+        "75pct": 0.0286,
+        "dense_pct": 0.0161
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.8,
+      "threshold_75": 0.5,
+      "accuracy": 0.7578,
+      "avg_flops_giga": 0.576212,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0289,
+        "75pct": 0.0251,
+        "dense_pct": 0.0096
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.7,
+      "threshold_75": 0.7,
+      "accuracy": 0.7577,
+      "avg_flops_giga": 0.575807,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0351,
+        "75pct": 0.0142,
+        "dense_pct": 0.0143
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.9,
+      "threshold_75": 0.5,
+      "accuracy": 0.7577,
+      "avg_flops_giga": 0.587313,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0189,
+        "75pct": 0.033,
+        "dense_pct": 0.0117
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.6,
+      "threshold_75": 0.7,
+      "accuracy": 0.7575,
+      "avg_flops_giga": 0.566523,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0417,
+        "75pct": 0.0108,
+        "dense_pct": 0.0111
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.7,
+      "threshold_75": 0.8,
+      "accuracy": 0.7575,
+      "avg_flops_giga": 0.579154,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0351,
+        "75pct": 0.0111,
+        "dense_pct": 0.0174
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.6,
+      "threshold_75": 0.9,
+      "accuracy": 0.7573,
+      "avg_flops_giga": 0.572136,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0417,
+        "75pct": 0.0056,
+        "dense_pct": 0.0163
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.7,
+      "threshold_75": 0.6,
+      "accuracy": 0.7573,
+      "avg_flops_giga": 0.572137,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0351,
+        "75pct": 0.0176,
+        "dense_pct": 0.0109
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.6,
+      "threshold_75": 0.8,
+      "accuracy": 0.7572,
+      "avg_flops_giga": 0.569113,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0417,
+        "75pct": 0.0084,
+        "dense_pct": 0.0135
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.6,
+      "threshold_75": 0.6,
+      "accuracy": 0.7571,
+      "avg_flops_giga": 0.563716,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0417,
+        "75pct": 0.0134,
+        "dense_pct": 0.0085
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.7,
+      "threshold_75": 0.5,
+      "accuracy": 0.7571,
+      "avg_flops_giga": 0.569007,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0351,
+        "75pct": 0.0205,
+        "dense_pct": 0.008
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.6,
+      "threshold_75": 0.5,
+      "accuracy": 0.7569,
+      "avg_flops_giga": 0.561234,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0417,
+        "75pct": 0.0157,
+        "dense_pct": 0.0062
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.5,
+      "threshold_75": 0.7,
+      "accuracy": 0.7567,
+      "avg_flops_giga": 0.559112,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0474,
+        "75pct": 0.0073,
+        "dense_pct": 0.0089
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.8,
+      "threshold_75": 0.4,
+      "accuracy": 0.7567,
+      "avg_flops_giga": 0.571894,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0289,
+        "75pct": 0.0291,
+        "dense_pct": 0.0056
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.5,
+      "threshold_75": 0.5,
+      "accuracy": 0.7564,
+      "avg_flops_giga": 0.555119,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0474,
+        "75pct": 0.011,
+        "dense_pct": 0.0052
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.6,
+      "threshold_75": 0.4,
+      "accuracy": 0.7564,
+      "avg_flops_giga": 0.558751,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0417,
+        "75pct": 0.018,
+        "dense_pct": 0.0039
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.9,
+      "threshold_75": 0.4,
+      "accuracy": 0.7564,
+      "avg_flops_giga": 0.581916,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0189,
+        "75pct": 0.038,
+        "dense_pct": 0.0067
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.5,
+      "threshold_75": 0.6,
+      "accuracy": 0.7563,
+      "avg_flops_giga": 0.556954,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0474,
+        "75pct": 0.0093,
+        "dense_pct": 0.0069
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.5,
+      "threshold_75": 0.8,
+      "accuracy": 0.7562,
+      "avg_flops_giga": 0.560732,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0474,
+        "75pct": 0.0058,
+        "dense_pct": 0.0104
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.7,
+      "threshold_75": 0.4,
+      "accuracy": 0.7562,
+      "avg_flops_giga": 0.565445,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0351,
+        "75pct": 0.0238,
+        "dense_pct": 0.0047
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.5,
+      "threshold_75": 0.4,
+      "accuracy": 0.7561,
+      "avg_flops_giga": 0.553176,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0474,
+        "75pct": 0.0128,
+        "dense_pct": 0.0034
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.8,
+      "threshold_75": 0.3,
+      "accuracy": 0.7561,
+      "avg_flops_giga": 0.568764,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0289,
+        "75pct": 0.032,
+        "dense_pct": 0.0027
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.5,
+      "threshold_75": 0.9,
+      "accuracy": 0.756,
+      "avg_flops_giga": 0.562567,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0474,
+        "75pct": 0.0041,
+        "dense_pct": 0.0121
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.6,
+      "threshold_75": 0.3,
+      "accuracy": 0.756,
+      "avg_flops_giga": 0.556916,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0417,
+        "75pct": 0.0197,
+        "dense_pct": 0.0022
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.5,
+      "threshold_75": 0.3,
+      "accuracy": 0.7557,
+      "avg_flops_giga": 0.551557,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0474,
+        "75pct": 0.0143,
+        "dense_pct": 0.0019
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.7,
+      "threshold_75": 0.3,
+      "accuracy": 0.7557,
+      "avg_flops_giga": 0.562963,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0351,
+        "75pct": 0.0261,
+        "dense_pct": 0.0024
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.9,
+      "threshold_75": 0.3,
+      "accuracy": 0.7556,
+      "avg_flops_giga": 0.578138,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0189,
+        "75pct": 0.0415,
+        "dense_pct": 0.0032
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.4,
+      "threshold_75": 0.5,
+      "accuracy": 0.7538,
+      "avg_flops_giga": 0.546511,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0547,
+        "75pct": 0.0057,
+        "dense_pct": 0.0032
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.4,
+      "threshold_75": 0.4,
+      "accuracy": 0.7537,
+      "avg_flops_giga": 0.545647,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0547,
+        "75pct": 0.0065,
+        "dense_pct": 0.0024
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.4,
+      "threshold_75": 0.6,
+      "accuracy": 0.7537,
+      "avg_flops_giga": 0.547698,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0547,
+        "75pct": 0.0046,
+        "dense_pct": 0.0043
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.4,
+      "threshold_75": 0.7,
+      "accuracy": 0.7536,
+      "avg_flops_giga": 0.548993,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0547,
+        "75pct": 0.0034,
+        "dense_pct": 0.0055
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.4,
+      "threshold_75": 0.3,
+      "accuracy": 0.7535,
+      "avg_flops_giga": 0.54446,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0547,
+        "75pct": 0.0076,
+        "dense_pct": 0.0013
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.4,
+      "threshold_75": 0.8,
+      "accuracy": 0.7533,
+      "avg_flops_giga": 0.549641,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0547,
+        "75pct": 0.0028,
+        "dense_pct": 0.0061
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.4,
+      "threshold_75": 0.9,
+      "accuracy": 0.7532,
+      "avg_flops_giga": 0.550721,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.0547,
+        "75pct": 0.0018,
+        "dense_pct": 0.0071
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.3,
+      "threshold_75": 0.3,
+      "accuracy": 0.7518,
+      "avg_flops_giga": 0.539022,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.06,
+        "75pct": 0.003,
+        "dense_pct": 0.0006
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.3,
+      "threshold_75": 0.4,
+      "accuracy": 0.7518,
+      "avg_flops_giga": 0.539778,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.06,
+        "75pct": 0.0023,
+        "dense_pct": 0.0013
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.3,
+      "threshold_75": 0.5,
+      "accuracy": 0.7518,
+      "avg_flops_giga": 0.540102,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.06,
+        "75pct": 0.002,
+        "dense_pct": 0.0016
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.3,
+      "threshold_75": 0.6,
+      "accuracy": 0.7518,
+      "avg_flops_giga": 0.540749,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.06,
+        "75pct": 0.0014,
+        "dense_pct": 0.0022
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.3,
+      "threshold_75": 0.7,
+      "accuracy": 0.7518,
+      "avg_flops_giga": 0.541181,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.06,
+        "75pct": 0.001,
+        "dense_pct": 0.0026
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.3,
+      "threshold_75": 0.8,
+      "accuracy": 0.7517,
+      "avg_flops_giga": 0.541397,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.06,
+        "75pct": 0.0008,
+        "dense_pct": 0.0028
+      }
+    },
+    {
+      "threshold_25": 0.4,
+      "threshold_50": 0.3,
+      "threshold_75": 0.9,
+      "accuracy": 0.7516,
+      "avg_flops_giga": 0.541613,
+      "budget_distribution": {
+        "25pct": 0.9364,
+        "50pct": 0.06,
+        "75pct": 0.0006,
+        "dense_pct": 0.003
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.8,
+      "threshold_75": 0.8,
+      "accuracy": 0.7467,
+      "avg_flops_giga": 0.531958,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.01,
+        "75pct": 0.0052,
+        "dense_pct": 0.0096
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.8,
+      "threshold_75": 0.9,
+      "accuracy": 0.7467,
+      "avg_flops_giga": 0.53293,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.01,
+        "75pct": 0.0043,
+        "dense_pct": 0.0105
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.9,
+      "threshold_75": 0.8,
+      "accuracy": 0.7467,
+      "avg_flops_giga": 0.538112,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0056,
+        "75pct": 0.0075,
+        "dense_pct": 0.0117
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.6,
+      "threshold_75": 0.7,
+      "accuracy": 0.7466,
+      "avg_flops_giga": 0.523115,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.015,
+        "75pct": 0.0043,
+        "dense_pct": 0.0055
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.8,
+      "threshold_75": 0.7,
+      "accuracy": 0.7466,
+      "avg_flops_giga": 0.530231,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.01,
+        "75pct": 0.0068,
+        "dense_pct": 0.008
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.6,
+      "threshold_75": 0.8,
+      "accuracy": 0.7465,
+      "avg_flops_giga": 0.524303,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.015,
+        "75pct": 0.0032,
+        "dense_pct": 0.0066
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.7,
+      "threshold_75": 0.8,
+      "accuracy": 0.7465,
+      "avg_flops_giga": 0.529181,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0118,
+        "75pct": 0.0045,
+        "dense_pct": 0.0085
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.7,
+      "threshold_75": 0.9,
+      "accuracy": 0.7465,
+      "avg_flops_giga": 0.530152,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0118,
+        "75pct": 0.0036,
+        "dense_pct": 0.0094
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.9,
+      "threshold_75": 0.7,
+      "accuracy": 0.7465,
+      "avg_flops_giga": 0.535737,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0056,
+        "75pct": 0.0097,
+        "dense_pct": 0.0095
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.9,
+      "threshold_75": 0.9,
+      "accuracy": 0.7465,
+      "avg_flops_giga": 0.539623,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0056,
+        "75pct": 0.0061,
+        "dense_pct": 0.0131
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.6,
+      "threshold_75": 0.6,
+      "accuracy": 0.7464,
+      "avg_flops_giga": 0.521604,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.015,
+        "75pct": 0.0057,
+        "dense_pct": 0.0041
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.7,
+      "threshold_75": 0.7,
+      "accuracy": 0.7464,
+      "avg_flops_giga": 0.527562,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0118,
+        "75pct": 0.006,
+        "dense_pct": 0.007
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.8,
+      "threshold_75": 0.5,
+      "accuracy": 0.7464,
+      "avg_flops_giga": 0.526669,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.01,
+        "75pct": 0.0101,
+        "dense_pct": 0.0047
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.8,
+      "threshold_75": 0.6,
+      "accuracy": 0.7464,
+      "avg_flops_giga": 0.528288,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.01,
+        "75pct": 0.0086,
+        "dense_pct": 0.0062
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.5,
+      "threshold_75": 0.7,
+      "accuracy": 0.7463,
+      "avg_flops_giga": 0.520377,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.017,
+        "75pct": 0.0032,
+        "dense_pct": 0.0046
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.6,
+      "threshold_75": 0.5,
+      "accuracy": 0.7463,
+      "avg_flops_giga": 0.520633,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.015,
+        "75pct": 0.0066,
+        "dense_pct": 0.0032
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.6,
+      "threshold_75": 0.9,
+      "accuracy": 0.7463,
+      "avg_flops_giga": 0.52495,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.015,
+        "75pct": 0.0026,
+        "dense_pct": 0.0072
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.9,
+      "threshold_75": 0.5,
+      "accuracy": 0.7463,
+      "avg_flops_giga": 0.531096,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0056,
+        "75pct": 0.014,
+        "dense_pct": 0.0052
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.9,
+      "threshold_75": 0.6,
+      "accuracy": 0.7463,
+      "avg_flops_giga": 0.533147,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0056,
+        "75pct": 0.0121,
+        "dense_pct": 0.0071
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.5,
+      "threshold_75": 0.8,
+      "accuracy": 0.7462,
+      "avg_flops_giga": 0.521133,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.017,
+        "75pct": 0.0025,
+        "dense_pct": 0.0053
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.7,
+      "threshold_75": 0.6,
+      "accuracy": 0.7462,
+      "avg_flops_giga": 0.525835,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0118,
+        "75pct": 0.0076,
+        "dense_pct": 0.0054
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.5,
+      "threshold_75": 0.5,
+      "accuracy": 0.7461,
+      "avg_flops_giga": 0.518434,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.017,
+        "75pct": 0.005,
+        "dense_pct": 0.0028
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.5,
+      "threshold_75": 0.6,
+      "accuracy": 0.7461,
+      "avg_flops_giga": 0.519298,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.017,
+        "75pct": 0.0042,
+        "dense_pct": 0.0036
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.7,
+      "threshold_75": 0.5,
+      "accuracy": 0.7461,
+      "avg_flops_giga": 0.524431,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0118,
+        "75pct": 0.0089,
+        "dense_pct": 0.0041
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.6,
+      "threshold_75": 0.4,
+      "accuracy": 0.746,
+      "avg_flops_giga": 0.51923,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.015,
+        "75pct": 0.0079,
+        "dense_pct": 0.0019
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.8,
+      "threshold_75": 0.4,
+      "accuracy": 0.746,
+      "avg_flops_giga": 0.524402,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.01,
+        "75pct": 0.0122,
+        "dense_pct": 0.0026
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.5,
+      "threshold_75": 0.9,
+      "accuracy": 0.7459,
+      "avg_flops_giga": 0.521672,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.017,
+        "75pct": 0.002,
+        "dense_pct": 0.0058
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.8,
+      "threshold_75": 0.3,
+      "accuracy": 0.7459,
+      "avg_flops_giga": 0.523215,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.01,
+        "75pct": 0.0133,
+        "dense_pct": 0.0015
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.9,
+      "threshold_75": 0.4,
+      "accuracy": 0.7459,
+      "avg_flops_giga": 0.528613,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0056,
+        "75pct": 0.0163,
+        "dense_pct": 0.0029
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.5,
+      "threshold_75": 0.4,
+      "accuracy": 0.7458,
+      "avg_flops_giga": 0.517139,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.017,
+        "75pct": 0.0062,
+        "dense_pct": 0.0016
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.6,
+      "threshold_75": 0.3,
+      "accuracy": 0.7458,
+      "avg_flops_giga": 0.518474,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.015,
+        "75pct": 0.0086,
+        "dense_pct": 0.0012
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.7,
+      "threshold_75": 0.4,
+      "accuracy": 0.7457,
+      "avg_flops_giga": 0.522488,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0118,
+        "75pct": 0.0107,
+        "dense_pct": 0.0023
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.9,
+      "threshold_75": 0.3,
+      "accuracy": 0.7457,
+      "avg_flops_giga": 0.527102,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0056,
+        "75pct": 0.0177,
+        "dense_pct": 0.0015
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.5,
+      "threshold_75": 0.3,
+      "accuracy": 0.7456,
+      "avg_flops_giga": 0.516491,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.017,
+        "75pct": 0.0068,
+        "dense_pct": 0.001
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.7,
+      "threshold_75": 0.3,
+      "accuracy": 0.7456,
+      "avg_flops_giga": 0.521409,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0118,
+        "75pct": 0.0117,
+        "dense_pct": 0.0013
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.4,
+      "threshold_75": 0.5,
+      "accuracy": 0.7448,
+      "avg_flops_giga": 0.514067,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0206,
+        "75pct": 0.0025,
+        "dense_pct": 0.0017
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.4,
+      "threshold_75": 0.6,
+      "accuracy": 0.7448,
+      "avg_flops_giga": 0.514606,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0206,
+        "75pct": 0.002,
+        "dense_pct": 0.0022
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.4,
+      "threshold_75": 0.7,
+      "accuracy": 0.7448,
+      "avg_flops_giga": 0.515254,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0206,
+        "75pct": 0.0014,
+        "dense_pct": 0.0028
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.4,
+      "threshold_75": 0.8,
+      "accuracy": 0.7448,
+      "avg_flops_giga": 0.51547,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0206,
+        "75pct": 0.0012,
+        "dense_pct": 0.003
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.4,
+      "threshold_75": 0.4,
+      "accuracy": 0.7447,
+      "avg_flops_giga": 0.513635,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0206,
+        "75pct": 0.0029,
+        "dense_pct": 0.0013
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.4,
+      "threshold_75": 0.3,
+      "accuracy": 0.7446,
+      "avg_flops_giga": 0.513095,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0206,
+        "75pct": 0.0034,
+        "dense_pct": 0.0008
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.4,
+      "threshold_75": 0.9,
+      "accuracy": 0.7446,
+      "avg_flops_giga": 0.515794,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0206,
+        "75pct": 0.0009,
+        "dense_pct": 0.0033
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.3,
+      "threshold_75": 0.7,
+      "accuracy": 0.744,
+      "avg_flops_giga": 0.511122,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0232,
+        "75pct": 0.0005,
+        "dense_pct": 0.0011
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.3,
+      "threshold_75": 0.8,
+      "accuracy": 0.744,
+      "avg_flops_giga": 0.51123,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0232,
+        "75pct": 0.0004,
+        "dense_pct": 0.0012
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.3,
+      "threshold_75": 0.6,
+      "accuracy": 0.7439,
+      "avg_flops_giga": 0.511014,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0232,
+        "75pct": 0.0006,
+        "dense_pct": 0.001
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.3,
+      "threshold_75": 0.9,
+      "accuracy": 0.7439,
+      "avg_flops_giga": 0.511338,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0232,
+        "75pct": 0.0003,
+        "dense_pct": 0.0013
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.3,
+      "threshold_75": 0.3,
+      "accuracy": 0.7438,
+      "avg_flops_giga": 0.510151,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0232,
+        "75pct": 0.0014,
+        "dense_pct": 0.0002
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.3,
+      "threshold_75": 0.4,
+      "accuracy": 0.7438,
+      "avg_flops_giga": 0.510582,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0232,
+        "75pct": 0.001,
+        "dense_pct": 0.0006
+      }
+    },
+    {
+      "threshold_25": 0.3,
+      "threshold_50": 0.3,
+      "threshold_75": 0.5,
+      "accuracy": 0.7438,
+      "avg_flops_giga": 0.51069,
+      "budget_distribution": {
+        "25pct": 0.9752,
+        "50pct": 0.0232,
+        "75pct": 0.0009,
+        "dense_pct": 0.0007
+      }
+    }
+  ]
+}

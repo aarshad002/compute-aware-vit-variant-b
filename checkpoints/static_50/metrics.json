@@ -1,0 +1,191 @@
+{
+  "model_name": "vit_static_50",
+  "parameters": 5543716,
+  "flops_giga": 0.687450432,
+  "best_val_acc": 0.7783,
+  "val_loss": 0.92455,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.947808,
+      "train_acc": 0.513184,
+      "val_loss": 1.119904,
+      "val_acc": 0.6863,
+      "lr": 0.0001,
+      "time_s": 41.73
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.011603,
+      "train_acc": 0.707927,
+      "val_loss": 0.916145,
+      "val_acc": 0.7369,
+      "lr": 0.0001,
+      "time_s": 40.72
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.807106,
+      "train_acc": 0.759423,
+      "val_loss": 0.827849,
+      "val_acc": 0.7575,
+      "lr": 0.0001,
+      "time_s": 40.28
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.67315,
+      "train_acc": 0.796935,
+      "val_loss": 0.777615,
+      "val_acc": 0.7742,
+      "lr": 0.0001,
+      "time_s": 40.27
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.587116,
+      "train_acc": 0.820743,
+      "val_loss": 0.791389,
+      "val_acc": 0.7709,
+      "lr": 0.0001,
+      "time_s": 40.59
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.504667,
+      "train_acc": 0.84429,
+      "val_loss": 0.793935,
+      "val_acc": 0.774,
+      "lr": 0.0001,
+      "time_s": 40.07
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.445348,
+      "train_acc": 0.860775,
+      "val_loss": 0.780266,
+      "val_acc": 0.7779,
+      "lr": 0.0001,
+      "time_s": 41.62
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.392725,
+      "train_acc": 0.87606,
+      "val_loss": 0.850284,
+      "val_acc": 0.7635,
+      "lr": 0.0001,
+      "time_s": 41.5
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.345761,
+      "train_acc": 0.890305,
+      "val_loss": 0.813178,
+      "val_acc": 0.7762,
+      "lr": 0.0001,
+      "time_s": 40.43
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.305745,
+      "train_acc": 0.900928,
+      "val_loss": 0.841497,
+      "val_acc": 0.7697,
+      "lr": 0.0001,
+      "time_s": 40.08
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.291821,
+      "train_acc": 0.90711,
+      "val_loss": 0.856571,
+      "val_acc": 0.7695,
+      "lr": 0.0001,
+      "time_s": 40.79
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.250313,
+      "train_acc": 0.920615,
+      "val_loss": 0.889481,
+      "val_acc": 0.7676,
+      "lr": 0.0001,
+      "time_s": 38.53
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.241345,
+      "train_acc": 0.922695,
+      "val_loss": 0.87208,
+      "val_acc": 0.7764,
+      "lr": 0.0001,
+      "time_s": 42.11
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.212637,
+      "train_acc": 0.930818,
+      "val_loss": 0.873219,
+      "val_acc": 0.778,
+      "lr": 0.0001,
+      "time_s": 40.03
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.200025,
+      "train_acc": 0.93676,
+      "val_loss": 0.92384,
+      "val_acc": 0.7664,
+      "lr": 0.0001,
+      "time_s": 39.75
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.188781,
+      "train_acc": 0.93876,
+      "val_loss": 0.926964,
+      "val_acc": 0.7754,
+      "lr": 0.0001,
+      "time_s": 41.14
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.181737,
+      "train_acc": 0.941261,
+      "val_loss": 0.929993,
+      "val_acc": 0.7739,
+      "lr": 0.0001,
+      "time_s": 40.49
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.169461,
+      "train_acc": 0.945102,
+      "val_loss": 0.929617,
+      "val_acc": 0.775,
+      "lr": 0.0001,
+      "time_s": 40.35
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.154647,
+      "train_acc": 0.950464,
+      "val_loss": 0.92455,
+      "val_acc": 0.7783,
+      "lr": 0.0001,
+      "time_s": 41.25
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.154769,
+      "train_acc": 0.950304,
+      "val_loss": 0.94039,
+      "val_acc": 0.7762,
+      "lr": 0.0001,
+      "time_s": 41.9
+    }
+  ],
+  "keep_ratio": 0.5,
+  "prune_layer": 3
+}

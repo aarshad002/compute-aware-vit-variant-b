@@ -1,0 +1,42 @@
+/home/arooba/miniconda3/envs/ai_assisted_env/lib/python3.10/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/arooba/compute-aware-vit-variant-b/src/train.py:391: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_ckpt, map_location=device))
+Device  : cuda
+Config  : configs/dynamic_50.yaml
+Settings: {'model_type': 'dynamic', 'num_classes': 100, 'keep_ratio': 0.5, 'prune_layer': 6, 'data_dir': '/home/arooba/compute-aware-vit-thesis/data/', 'output_dir': 'checkpoints/dynamic_50', 'batch_size': 32, 'epochs': 20, 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'seed': 42, 'pretrained': True}
+Model   : vit_dynamic_50  (5,543,716 params)
+Training vit_dynamic_50 for 20 epochs  |  output: checkpoints/dynamic_50
+Epoch   1/20 | train_loss=1.8444  train_acc=0.5368 | val_loss=1.0749  val_acc=0.6918 | lr=1.00e-04 | 39.1s
+  ✓ best model saved → checkpoints/dynamic_50/best_model.pt  (val_acc=0.6918)
+Epoch   2/20 | train_loss=0.9488  train_acc=0.7253 | val_loss=0.9086  val_acc=0.7390 | lr=1.00e-04 | 38.2s
+  ✓ best model saved → checkpoints/dynamic_50/best_model.pt  (val_acc=0.7390)
+Epoch   3/20 | train_loss=0.7473  train_acc=0.7772 | val_loss=0.8265  val_acc=0.7574 | lr=1.00e-04 | 40.4s
+  ✓ best model saved → checkpoints/dynamic_50/best_model.pt  (val_acc=0.7574)
+Epoch   4/20 | train_loss=0.6254  train_acc=0.8110 | val_loss=0.7772  val_acc=0.7721 | lr=1.00e-04 | 40.0s
+  ✓ best model saved → checkpoints/dynamic_50/best_model.pt  (val_acc=0.7721)
+Epoch   5/20 | train_loss=0.5303  train_acc=0.8361 | val_loss=0.7627  val_acc=0.7786 | lr=1.00e-04 | 40.3s
+  ✓ best model saved → checkpoints/dynamic_50/best_model.pt  (val_acc=0.7786)
+Epoch   6/20 | train_loss=0.4686  train_acc=0.8565 | val_loss=0.7790  val_acc=0.7779 | lr=1.00e-04 | 36.3s
+Epoch   7/20 | train_loss=0.3961  train_acc=0.8749 | val_loss=0.7611  val_acc=0.7855 | lr=1.00e-04 | 40.3s
+  ✓ best model saved → checkpoints/dynamic_50/best_model.pt  (val_acc=0.7855)
+Epoch   8/20 | train_loss=0.3565  train_acc=0.8879 | val_loss=0.7949  val_acc=0.7751 | lr=1.00e-04 | 40.1s
+Epoch   9/20 | train_loss=0.3083  train_acc=0.9009 | val_loss=0.7797  val_acc=0.7837 | lr=1.00e-04 | 40.2s
+Epoch  10/20 | train_loss=0.2749  train_acc=0.9124 | val_loss=0.7984  val_acc=0.7821 | lr=1.00e-04 | 40.8s
+Epoch  11/20 | train_loss=0.2478  train_acc=0.9208 | val_loss=0.8094  val_acc=0.7885 | lr=1.00e-04 | 40.8s
+  ✓ best model saved → checkpoints/dynamic_50/best_model.pt  (val_acc=0.7885)
+Epoch  12/20 | train_loss=0.2299  train_acc=0.9270 | val_loss=0.8206  val_acc=0.7839 | lr=1.00e-04 | 41.0s
+Epoch  13/20 | train_loss=0.2108  train_acc=0.9317 | val_loss=0.8329  val_acc=0.7845 | lr=1.00e-04 | 39.6s
+Epoch  14/20 | train_loss=0.1957  train_acc=0.9365 | val_loss=0.8374  val_acc=0.7879 | lr=1.00e-04 | 41.5s
+Epoch  15/20 | train_loss=0.1807  train_acc=0.9416 | val_loss=0.9033  val_acc=0.7777 | lr=1.00e-04 | 38.7s
+Epoch  16/20 | train_loss=0.1654  train_acc=0.9468 | val_loss=0.9025  val_acc=0.7838 | lr=1.00e-04 | 40.4s
+Epoch  17/20 | train_loss=0.1619  train_acc=0.9480 | val_loss=0.8817  val_acc=0.7829 | lr=1.00e-04 | 40.7s
+Epoch  18/20 | train_loss=0.1500  train_acc=0.9523 | val_loss=0.9176  val_acc=0.7788 | lr=1.00e-04 | 41.5s
+Epoch  19/20 | train_loss=0.1407  train_acc=0.9547 | val_loss=0.9566  val_acc=0.7763 | lr=1.00e-04 | 40.3s
+Epoch  20/20 | train_loss=0.1420  train_acc=0.9545 | val_loss=0.9288  val_acc=0.7777 | lr=1.00e-04 | 40.1s
+
+Loaded best checkpoint from checkpoints/dynamic_50/best_model.pt
+Metrics saved → checkpoints/dynamic_50/metrics.json
+val_acc=0.7885  flops=0.8181 GFLOPs  params=5,543,716
+
+Done.

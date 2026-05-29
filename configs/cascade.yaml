@@ -1,0 +1,13 @@
+model_type: cascade
+num_classes: 100
+data_dir: /home/arooba/compute-aware-vit-thesis/data/
+output_dir: checkpoints/cascade
+batch_size: 32
+seed: 42
+prune_layer: 3
+# Paths to pre-trained stage checkpoints
+ckpt_25:    checkpoints/static_25/best_model.pt
+ckpt_50:    checkpoints/static_50/best_model.pt
+ckpt_75:    checkpoints/static_75/best_model.pt
+ckpt_dense: checkpoints/dense/best_model.pt
+# Grid search: 7×7×7 = 343 combinations over [0.3,0.4,0.5,0.6,0.7,0.8,0.9]

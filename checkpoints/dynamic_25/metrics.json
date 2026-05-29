@@ -1,0 +1,191 @@
+{
+  "model_name": "vit_dynamic_25",
+  "parameters": 5543716,
+  "flops_giga": 0.687403392,
+  "best_val_acc": 0.768,
+  "val_loss": 0.918474,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.186186,
+      "train_acc": 0.456466,
+      "val_loss": 1.300342,
+      "val_acc": 0.6333,
+      "lr": 0.0001,
+      "time_s": 39.62
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.131208,
+      "train_acc": 0.677617,
+      "val_loss": 1.069729,
+      "val_acc": 0.6952,
+      "lr": 0.0001,
+      "time_s": 40.86
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.903068,
+      "train_acc": 0.734215,
+      "val_loss": 0.937911,
+      "val_acc": 0.7248,
+      "lr": 0.0001,
+      "time_s": 40.57
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.776016,
+      "train_acc": 0.767085,
+      "val_loss": 0.909929,
+      "val_acc": 0.7375,
+      "lr": 0.0001,
+      "time_s": 40.61
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.64902,
+      "train_acc": 0.804758,
+      "val_loss": 0.849903,
+      "val_acc": 0.7488,
+      "lr": 0.0001,
+      "time_s": 41.79
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.590675,
+      "train_acc": 0.819642,
+      "val_loss": 0.856846,
+      "val_acc": 0.749,
+      "lr": 0.0001,
+      "time_s": 40.2
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.520643,
+      "train_acc": 0.838868,
+      "val_loss": 0.87148,
+      "val_acc": 0.7514,
+      "lr": 0.0001,
+      "time_s": 40.47
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.455247,
+      "train_acc": 0.857394,
+      "val_loss": 0.849524,
+      "val_acc": 0.7595,
+      "lr": 0.0001,
+      "time_s": 40.3
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.405481,
+      "train_acc": 0.872999,
+      "val_loss": 0.884397,
+      "val_acc": 0.7595,
+      "lr": 0.0001,
+      "time_s": 41.95
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.378885,
+      "train_acc": 0.880022,
+      "val_loss": 0.929163,
+      "val_acc": 0.7486,
+      "lr": 0.0001,
+      "time_s": 41.2
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.335001,
+      "train_acc": 0.893326,
+      "val_loss": 0.896721,
+      "val_acc": 0.7519,
+      "lr": 0.0001,
+      "time_s": 40.33
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.306242,
+      "train_acc": 0.903469,
+      "val_loss": 0.897244,
+      "val_acc": 0.7628,
+      "lr": 0.0001,
+      "time_s": 40.24
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.279778,
+      "train_acc": 0.911252,
+      "val_loss": 0.921384,
+      "val_acc": 0.7619,
+      "lr": 0.0001,
+      "time_s": 40.41
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.265804,
+      "train_acc": 0.915153,
+      "val_loss": 0.909102,
+      "val_acc": 0.7638,
+      "lr": 0.0001,
+      "time_s": 40.84
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.229162,
+      "train_acc": 0.925896,
+      "val_loss": 0.918474,
+      "val_acc": 0.768,
+      "lr": 0.0001,
+      "time_s": 40.58
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.21586,
+      "train_acc": 0.931178,
+      "val_loss": 0.981546,
+      "val_acc": 0.7592,
+      "lr": 0.0001,
+      "time_s": 35.32
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.208617,
+      "train_acc": 0.932398,
+      "val_loss": 0.99926,
+      "val_acc": 0.7562,
+      "lr": 0.0001,
+      "time_s": 40.61
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.201274,
+      "train_acc": 0.935559,
+      "val_loss": 1.003548,
+      "val_acc": 0.7526,
+      "lr": 0.0001,
+      "time_s": 41.23
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.187831,
+      "train_acc": 0.939241,
+      "val_loss": 0.999327,
+      "val_acc": 0.7582,
+      "lr": 0.0001,
+      "time_s": 40.71
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.174066,
+      "train_acc": 0.944422,
+      "val_loss": 0.996835,
+      "val_acc": 0.7602,
+      "lr": 0.0001,
+      "time_s": 40.94
+    }
+  ],
+  "keep_ratio": 0.25,
+  "prune_layer": 6
+}
