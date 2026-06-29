@@ -1,0 +1,20 @@
+/home/arooba/compute-aware-vit-variant-b/src/train.py:187: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(path, map_location=device))
+Device  : cuda
+Config  : configs/cascade.yaml
+Settings: {'model_type': 'cascade', 'num_classes': 100, 'data_dir': '/home/arooba/compute-aware-vit-thesis/data/', 'output_dir': 'checkpoints/cascade_clean_split', 'batch_size': 32, 'seed': 42, 'prune_layer': 3, 'ckpt_25': 'checkpoints/static_25_clean_split/best_model.pt', 'ckpt_50': 'checkpoints/static_50_clean_split/best_model.pt', 'ckpt_75': 'checkpoints/static_75_clean_split/best_model.pt', 'ckpt_dense': 'checkpoints/dense_clean_split/best_model.pt', 'split_seed': 42, 'val_size': 5000}
+=== Cascade study (val-selected, test-evaluated) ===
+  loaded checkpoints/static_25_clean_split/best_model.pt
+  loaded checkpoints/static_50_clean_split/best_model.pt
+  loaded checkpoints/static_75_clean_split/best_model.pt
+  loaded checkpoints/dense_clean_split/best_model.pt
+Stage FLOPs (GFLOPs): {'25': 0.491472384, '50': 0.687450432, '75': 0.88342848, 'dense': 1.079406528}
+Pre-caching stage statistics (val + test)…
+Sweeping 512 threshold combinations on validation…
+  [highest_val_acc] val_acc=0.8226@1.3433  -> test_acc=0.8175@1.3563
+  [pareto_knee] val_acc=0.7402@0.5212  -> test_acc=0.7390@0.5215
+  [best_under_static75_flops] val_acc=0.7992@0.8785  -> test_acc=0.7973@0.8862
+  [best_under_static50_flops] val_acc=0.7744@0.6850  -> test_acc=0.7748@0.6870
+Highest-val-acc point  -> test acc=0.8175 @ 1.3563 GFLOPs
+Learned gate (best-val) -> test acc=0.8128 @ 1.4129 GFLOPs
+Plot written: True.  Metrics saved → checkpoints/cascade_clean_split/metrics.json

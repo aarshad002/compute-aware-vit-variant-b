@@ -1,0 +1,228 @@
+{
+  "note": "Early-signal separability diagnostic. Probe = 5-fold CV logistic measurement on layer<=3 features (NOT a deployed model, NOT layer-6). Routing curve from out-of-fold scores on validation. Decision happens at layer 3 (during the prefix) so routing FLOPs are single-pass and honest.",
+  "single_model_flops_giga": {
+    "25": 0.491472384,
+    "50": 0.687450432,
+    "75": 0.88342848,
+    "dense": 1.079406528
+  },
+  "headroom_decomposition": {
+    "val": {
+      "coverage_any_correct": 0.9114,
+      "dense_accuracy": 0.8074,
+      "ensemble_headroom_acc": 0.10399999999999998,
+      "budget_routing_only_oracle": {
+        "accuracy": 0.8074,
+        "avg_flops": 0.6456287165567999,
+        "flops_saving_vs_dense": 0.43377781144320016
+      },
+      "frac_25correct_but_dense_wrong": 0.0558,
+      "frac_25wrong_but_bigger_fixes": 0.181,
+      "frac_wrong_everywhere": 0.0886
+    },
+    "test": {
+      "coverage_any_correct": 0.9102,
+      "dense_accuracy": 0.795,
+      "ensemble_headroom_acc": 0.11519999999999997,
+      "budget_routing_only_oracle": {
+        "accuracy": 0.795,
+        "avg_flops": 0.6513708733631999,
+        "flops_saving_vs_dense": 0.42803565463680016
+      },
+      "frac_25correct_but_dense_wrong": 0.0592,
+      "frac_25wrong_but_bigger_fixes": 0.1819,
+      "frac_wrong_everywhere": 0.0898
+    }
+  },
+  "single_feature_auroc_static25_wrong": {
+    "cls_cos_2_3": 0.545,
+    "cls_drift_1_3": 0.5444,
+    "cls_cos_1_3": 0.544,
+    "L3_patch_norm_mean": 0.5369,
+    "L1_patch_norm_mean": 0.5362,
+    "L1_cls_norm": 0.5349,
+    "L2_cls_norm": 0.5277,
+    "L2_patch_norm_mean": 0.5235,
+    "L1_patch_norm_std": 0.5194,
+    "L3_cls_norm": 0.5176,
+    "L2_patch_norm_std": 0.5112,
+    "raw_patch_texture": 0.5096,
+    "L1_sal_entropy": 0.5079,
+    "L3_sal_entropy": 0.5077,
+    "L2_sal_entropy": 0.5047,
+    "raw_patch_contrast": 0.5036,
+    "raw_edge_density": 0.5027,
+    "L3_patch_norm_std": 0.5026
+  },
+  "probe_separability_val": {
+    "static25_wrong": {
+      "auroc": 0.5559,
+      "balanced_accuracy": 0.5432,
+      "macro_f1": 0.5006,
+      "precision_needs_upgrade": 0.3018,
+      "recall_needs_upgrade": 0.5912,
+      "brier": 0.2473,
+      "base_rate": 0.2696
+    },
+    "fixable_by_upgrade": {
+      "auroc": 0.5433,
+      "balanced_accuracy": 0.5334,
+      "macro_f1": 0.4625,
+      "precision_needs_upgrade": 0.2005,
+      "recall_needs_upgrade": 0.5635,
+      "brier": 0.2479,
+      "base_rate": 0.181
+    },
+    "hard_by_dense_confidence": {
+      "auroc": 0.5679,
+      "balanced_accuracy": 0.5521,
+      "macro_f1": 0.51,
+      "precision_needs_upgrade": 0.2896,
+      "recall_needs_upgrade": 0.572,
+      "brier": 0.2461,
+      "base_rate": 0.25
+    }
+  },
+  "routing_curve_25_to_75_val": [
+    {
+      "threshold": 1.01,
+      "frac_hard": 0.0,
+      "accuracy": 0.7304,
+      "avg_flops": 0.49147
+    },
+    {
+      "threshold": 0.9,
+      "frac_hard": 0.0,
+      "accuracy": 0.7304,
+      "avg_flops": 0.49147
+    },
+    {
+      "threshold": 0.8,
+      "frac_hard": 0.0,
+      "accuracy": 0.7304,
+      "avg_flops": 0.49147
+    },
+    {
+      "threshold": 0.7,
+      "frac_hard": 0.0002,
+      "accuracy": 0.7304,
+      "avg_flops": 0.49155
+    },
+    {
+      "threshold": 0.6,
+      "frac_hard": 0.0466,
+      "accuracy": 0.7364,
+      "avg_flops": 0.50974
+    },
+    {
+      "threshold": 0.5,
+      "frac_hard": 0.5282,
+      "accuracy": 0.7664,
+      "avg_flops": 0.6985
+    },
+    {
+      "threshold": 0.4,
+      "frac_hard": 0.889,
+      "accuracy": 0.7854,
+      "avg_flops": 0.83992
+    },
+    {
+      "threshold": 0.3,
+      "frac_hard": 0.9862,
+      "accuracy": 0.7878,
+      "avg_flops": 0.87802
+    },
+    {
+      "threshold": 0.2,
+      "frac_hard": 0.9998,
+      "accuracy": 0.7884,
+      "avg_flops": 0.88335
+    },
+    {
+      "threshold": 0.1,
+      "frac_hard": 1.0,
+      "accuracy": 0.7884,
+      "avg_flops": 0.88343
+    },
+    {
+      "threshold": -0.01,
+      "frac_hard": 1.0,
+      "accuracy": 0.7884,
+      "avg_flops": 0.88343
+    }
+  ],
+  "routing_curve_25_to_dense_val": [
+    {
+      "threshold": 1.01,
+      "frac_hard": 0.0,
+      "accuracy": 0.7304,
+      "avg_flops": 0.49147
+    },
+    {
+      "threshold": 0.9,
+      "frac_hard": 0.0,
+      "accuracy": 0.7304,
+      "avg_flops": 0.49147
+    },
+    {
+      "threshold": 0.8,
+      "frac_hard": 0.0,
+      "accuracy": 0.7304,
+      "avg_flops": 0.49147
+    },
+    {
+      "threshold": 0.7,
+      "frac_hard": 0.0002,
+      "accuracy": 0.7304,
+      "avg_flops": 0.49159
+    },
+    {
+      "threshold": 0.6,
+      "frac_hard": 0.0466,
+      "accuracy": 0.7368,
+      "avg_flops": 0.51887
+    },
+    {
+      "threshold": 0.5,
+      "frac_hard": 0.5282,
+      "accuracy": 0.777,
+      "avg_flops": 0.80202
+    },
+    {
+      "threshold": 0.4,
+      "frac_hard": 0.889,
+      "accuracy": 0.8026,
+      "avg_flops": 1.01415
+    },
+    {
+      "threshold": 0.3,
+      "frac_hard": 0.9862,
+      "accuracy": 0.807,
+      "avg_flops": 1.07129
+    },
+    {
+      "threshold": 0.2,
+      "frac_hard": 0.9998,
+      "accuracy": 0.8074,
+      "avg_flops": 1.07929
+    },
+    {
+      "threshold": 0.1,
+      "frac_hard": 1.0,
+      "accuracy": 0.8074,
+      "avg_flops": 1.07941
+    },
+    {
+      "threshold": -0.01,
+      "frac_hard": 1.0,
+      "accuracy": 0.8074,
+      "avg_flops": 1.07941
+    }
+  ],
+  "baselines_val": {
+    "25": 0.7304,
+    "50": 0.7738,
+    "75": 0.7884,
+    "dense": 0.8074
+  }
+}

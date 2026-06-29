@@ -4,5 +4,5 @@ mkdir -p /home/arooba/compute-aware-vit-variant-b/scripts/logs
 cd /home/arooba/compute-aware-vit-variant-b
 nohup conda run -n ai_assisted_env python -u src/train.py \
   --config configs/static_50.yaml \
-  > scripts/logs/static_50.out 2>&1 &
+  > scripts/logs/static_50_clean_split.out 2>&1 &
 echo "started PID $!"

@@ -23,15 +23,15 @@ run_job() {
   echo "Finished: $config (exit $?)"
 }
 
-run_job configs/dense.yaml        scripts/logs/dense.out
-run_job configs/static_25.yaml    scripts/logs/static_25.out
-run_job configs/static_50.yaml    scripts/logs/static_50.out
-run_job configs/static_75.yaml    scripts/logs/static_75.out
-run_job configs/dynamic_25.yaml   scripts/logs/dynamic_25.out
-run_job configs/dynamic_50.yaml   scripts/logs/dynamic_50.out
-run_job configs/dynamic_75.yaml   scripts/logs/dynamic_75.out
-run_job configs/controller.yaml   scripts/logs/controller.out
-run_job configs/cascade.yaml      scripts/logs/cascade.out
+run_job configs/dense.yaml        scripts/logs/dense_clean_split.out
+run_job configs/static_25.yaml    scripts/logs/static_25_clean_split.out
+run_job configs/static_50.yaml    scripts/logs/static_50_clean_split.out
+run_job configs/static_75.yaml    scripts/logs/static_75_clean_split.out
+run_job configs/dynamic_25.yaml   scripts/logs/dynamic_25_clean_split.out
+run_job configs/dynamic_50.yaml   scripts/logs/dynamic_50_clean_split.out
+run_job configs/dynamic_75.yaml   scripts/logs/dynamic_75_clean_split.out
+run_job configs/controller.yaml   scripts/logs/controller_clean_split.out
+run_job configs/cascade.yaml      scripts/logs/cascade_clean_split.out
 
 echo "=========================================="
 echo "All jobs complete."

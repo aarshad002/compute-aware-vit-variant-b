@@ -1,0 +1,46 @@
+/home/arooba/compute-aware-vit-variant-b/src/train.py:691: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_ckpt, map_location=device))
+Device  : cuda
+Config  : configs/multibudget.yaml
+Settings: {'model_type': 'multibudget', 'num_classes': 100, 'data_dir': '/home/arooba/compute-aware-vit-thesis/data/', 'output_dir': 'checkpoints/multibudget_clean_split', 'results_dir': 'results/multibudget_clean_split', 'batch_size': 32, 'epochs': 20, 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'seed': 42, 'pretrained': True, 'prune_layer': 3, 'eval_budgets': [0.25, 0.5, 0.75, 1.0], 'middle_budgets': [0.5, 0.75], 'use_all_budgets': False, 'distill_weight': 0.5, 'eval_test': True, 'split_seed': 42, 'val_size': 5000}
+Split   : {'split_seed': 42, 'train_size': 45000, 'val_size': 5000, 'test_size': 10000}
+Model   : vit_multibudget  (5,543,716 params)
+Multi-budget sandwich training for 20 epochs -> checkpoints/multibudget_clean_split
+Epoch   1/20 | loss=2.0322 | val[0.25=0.6206  0.50=0.6884  0.75=0.7004  1.00=0.7074] | mean=0.6792 min=0.6206 | 58.7s
+  ✓ best (mean_val=0.6792) saved
+Epoch   2/20 | loss=1.0670 | val[0.25=0.6838  0.50=0.7372  0.75=0.7586  1.00=0.7672] | mean=0.7367 min=0.6838 | 57.0s
+  ✓ best (mean_val=0.7367) saved
+Epoch   3/20 | loss=0.8451 | val[0.25=0.6940  0.50=0.7474  0.75=0.7694  1.00=0.7766] | mean=0.7469 min=0.6940 | 57.9s
+  ✓ best (mean_val=0.7469) saved
+Epoch   4/20 | loss=0.7056 | val[0.25=0.7238  0.50=0.7688  0.75=0.7846  1.00=0.7914] | mean=0.7671 min=0.7238 | 54.8s
+  ✓ best (mean_val=0.7671) saved
+Epoch   5/20 | loss=0.6038 | val[0.25=0.7160  0.50=0.7664  0.75=0.7838  1.00=0.7840] | mean=0.7626 min=0.7160 | 52.9s
+Epoch   6/20 | loss=0.5363 | val[0.25=0.7380  0.50=0.7868  0.75=0.7976  1.00=0.8032] | mean=0.7814 min=0.7380 | 54.4s
+  ✓ best (mean_val=0.7814) saved
+Epoch   7/20 | loss=0.4597 | val[0.25=0.7434  0.50=0.7874  0.75=0.8044  1.00=0.8082] | mean=0.7858 min=0.7434 | 57.2s
+  ✓ best (mean_val=0.7858) saved
+Epoch   8/20 | loss=0.4053 | val[0.25=0.7388  0.50=0.7854  0.75=0.7978  1.00=0.8002] | mean=0.7806 min=0.7388 | 55.9s
+Epoch   9/20 | loss=0.3560 | val[0.25=0.7248  0.50=0.7792  0.75=0.7916  1.00=0.8000] | mean=0.7739 min=0.7248 | 55.4s
+Epoch  10/20 | loss=0.3217 | val[0.25=0.7256  0.50=0.7760  0.75=0.7928  1.00=0.7966] | mean=0.7728 min=0.7256 | 61.2s
+Epoch  11/20 | loss=0.2836 | val[0.25=0.7244  0.50=0.7752  0.75=0.7898  1.00=0.7984] | mean=0.7720 min=0.7244 | 55.5s
+Epoch  12/20 | loss=0.2658 | val[0.25=0.7306  0.50=0.7774  0.75=0.7928  1.00=0.8014] | mean=0.7755 min=0.7306 | 63.2s
+Epoch  13/20 | loss=0.2389 | val[0.25=0.7268  0.50=0.7728  0.75=0.7872  1.00=0.7908] | mean=0.7694 min=0.7268 | 56.2s
+Epoch  14/20 | loss=0.2247 | val[0.25=0.7388  0.50=0.7828  0.75=0.7934  1.00=0.7932] | mean=0.7771 min=0.7388 | 55.4s
+Epoch  15/20 | loss=0.1958 | val[0.25=0.7314  0.50=0.7766  0.75=0.7964  1.00=0.8012] | mean=0.7764 min=0.7314 | 58.3s
+Epoch  16/20 | loss=0.1935 | val[0.25=0.7214  0.50=0.7816  0.75=0.7996  1.00=0.8032] | mean=0.7764 min=0.7214 | 55.6s
+Epoch  17/20 | loss=0.1751 | val[0.25=0.7442  0.50=0.7854  0.75=0.7986  1.00=0.8028] | mean=0.7827 min=0.7442 | 56.8s
+Epoch  18/20 | loss=0.1724 | val[0.25=0.7218  0.50=0.7716  0.75=0.7878  1.00=0.7942] | mean=0.7688 min=0.7218 | 56.4s
+Epoch  19/20 | loss=0.1717 | val[0.25=0.7298  0.50=0.7704  0.75=0.7806  1.00=0.7868] | mean=0.7669 min=0.7298 | 55.5s
+Epoch  20/20 | loss=0.1514 | val[0.25=0.7236  0.50=0.7744  0.75=0.7888  1.00=0.7928] | mean=0.7699 min=0.7236 | 58.0s
+
+Loaded best checkpoint (epoch 7, mean_val=0.7858)
+
+Progressive widening evaluation (val-select, test-once):
+  prefix=0.2915  exit_cost={'25': 0.4915, '50': 0.8874, '75': 1.4794, 'dense': 2.2673}
+  [highest_val_acc] val 0.8082@2.2673 -> test 0.8070@2.2673
+  [best_under_static75_flops] val 0.7972@0.8286 -> test 0.7921@0.8312
+  [best_under_static50_flops] val 0.7766@0.6258 -> test 0.7728@0.6275
+  [pareto_knee] val 0.7434@0.4915 -> test 0.7483@0.4915
+Metrics saved → checkpoints/multibudget_clean_split/metrics.json
+
+Done.

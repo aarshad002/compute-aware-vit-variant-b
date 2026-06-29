@@ -3,10 +3,13 @@ num_classes: 100
 keep_ratio: 0.75
 prune_layer: 3
 data_dir: /home/arooba/compute-aware-vit-thesis/data/
-output_dir: checkpoints/static_75
+output_dir: checkpoints/static_75_clean_split
 batch_size: 32
 epochs: 20
 learning_rate: 0.0001
 weight_decay: 0.0001
 seed: 42
 pretrained: true
+# Clean train/val/test protocol (val held out from official train split)
+split_seed: 42
+val_size: 5000   # carved from the 50k official train split -> 45k train / 5k val

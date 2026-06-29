@@ -1,0 +1,198 @@
+{
+  "model_name": "vit_static_25",
+  "parameters": 5543716,
+  "flops_giga": 0.491472384,
+  "best_val_acc": 0.7304,
+  "best_epoch": 9,
+  "final_test_acc": 0.7283,
+  "val_loss": 0.956342,
+  "test_loss": 0.969443,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.374494,
+      "train_acc": 0.41234,
+      "val_loss": 1.531468,
+      "val_acc": 0.5734,
+      "lr": 0.0001,
+      "time_s": 46.74
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.347802,
+      "train_acc": 0.622644,
+      "val_loss": 1.202844,
+      "val_acc": 0.6602,
+      "lr": 0.0001,
+      "time_s": 45.79
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.096719,
+      "train_acc": 0.6847,
+      "val_loss": 1.084327,
+      "val_acc": 0.6916,
+      "lr": 0.0001,
+      "time_s": 45.6
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.948751,
+      "train_acc": 0.724129,
+      "val_loss": 1.040357,
+      "val_acc": 0.6962,
+      "lr": 0.0001,
+      "time_s": 46.08
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.829624,
+      "train_acc": 0.755179,
+      "val_loss": 1.01664,
+      "val_acc": 0.705,
+      "lr": 0.0001,
+      "time_s": 45.57
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.747227,
+      "train_acc": 0.776227,
+      "val_loss": 1.048661,
+      "val_acc": 0.7044,
+      "lr": 0.0001,
+      "time_s": 45.63
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.678846,
+      "train_acc": 0.794186,
+      "val_loss": 0.982704,
+      "val_acc": 0.7132,
+      "lr": 0.0001,
+      "time_s": 46.27
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.613588,
+      "train_acc": 0.812967,
+      "val_loss": 1.08435,
+      "val_acc": 0.6976,
+      "lr": 0.0001,
+      "time_s": 45.93
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.556468,
+      "train_acc": 0.829014,
+      "val_loss": 0.956342,
+      "val_acc": 0.7304,
+      "lr": 0.0001,
+      "time_s": 45.62
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.495474,
+      "train_acc": 0.846284,
+      "val_loss": 1.003546,
+      "val_acc": 0.722,
+      "lr": 0.0001,
+      "time_s": 45.59
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.436958,
+      "train_acc": 0.862464,
+      "val_loss": 1.028568,
+      "val_acc": 0.7218,
+      "lr": 0.0001,
+      "time_s": 46.13
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.418705,
+      "train_acc": 0.86851,
+      "val_loss": 1.093212,
+      "val_acc": 0.711,
+      "lr": 0.0001,
+      "time_s": 45.8
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.375116,
+      "train_acc": 0.883113,
+      "val_loss": 1.09961,
+      "val_acc": 0.7092,
+      "lr": 0.0001,
+      "time_s": 45.6
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.356169,
+      "train_acc": 0.886958,
+      "val_loss": 1.10871,
+      "val_acc": 0.726,
+      "lr": 0.0001,
+      "time_s": 46.1
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.313435,
+      "train_acc": 0.900627,
+      "val_loss": 1.065632,
+      "val_acc": 0.7268,
+      "lr": 0.0001,
+      "time_s": 46.04
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.310374,
+      "train_acc": 0.902716,
+      "val_loss": 1.118363,
+      "val_acc": 0.716,
+      "lr": 0.0001,
+      "time_s": 45.59
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.292859,
+      "train_acc": 0.908117,
+      "val_loss": 1.125589,
+      "val_acc": 0.7112,
+      "lr": 0.0001,
+      "time_s": 46.07
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.251289,
+      "train_acc": 0.92143,
+      "val_loss": 1.109743,
+      "val_acc": 0.7256,
+      "lr": 0.0001,
+      "time_s": 45.63
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.239289,
+      "train_acc": 0.922986,
+      "val_loss": 1.109625,
+      "val_acc": 0.7262,
+      "lr": 0.0001,
+      "time_s": 45.83
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.236283,
+      "train_acc": 0.92532,
+      "val_loss": 1.164381,
+      "val_acc": 0.7196,
+      "lr": 0.0001,
+      "time_s": 45.8
+    }
+  ],
+  "split_seed": 42,
+  "train_size": 45000,
+  "val_size": 5000,
+  "test_size": 10000,
+  "keep_ratio": 0.25,
+  "prune_layer": 3
+}

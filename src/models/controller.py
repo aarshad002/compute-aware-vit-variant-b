@@ -1,6 +1,6 @@
 """Confidence-based token budget controller for adaptive per-image routing."""
 
-from typing import Tuple
+from typing import Dict, Tuple
 
 import torch
 import torch.nn as nn
@@ -33,6 +33,7 @@ class VitController(nn.Module):
     """
 
     PRUNE_LAYER: int = 6  # prune after this block index (0-based: block 5)
+    BUDGETS: Tuple[float, float, float] = (0.25, 0.50, 0.75)  # supported keep ratios
 
     def __init__(
         self,
@@ -120,18 +121,14 @@ class VitController(nn.Module):
         main_logits = self.head(x[:, 0])
         return main_logits, aux_logits
 
-    def forward_inference(self, x: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:
-        """Inference forward: dynamic budget routing per image.
-
-        Each image is processed independently after the shared prefix so that
-        different keep_ratios can be applied per sample.
+    def _prefix(self, x: torch.Tensor) -> torch.Tensor:
+        """Run patch embedding, positional encoding and the shared prefix blocks.
 
         Args:
             x: Input images (B, 3, 224, 224).
 
         Returns:
-            (logits, keep_ratios) where keep_ratios is a float tensor (B,)
-            indicating the budget fraction used per image.
+            Token sequence after the first ``PRUNE_LAYER`` blocks (B, N, C).
         """
         B = x.shape[0]
         x = self.patch_embed(x)
@@ -139,16 +136,47 @@ class VitController(nn.Module):
         x = torch.cat((cls_tokens, x), dim=1)
         x = x + self.pos_embed
         x = self.pos_drop(x)
-
-        # Shared prefix: run first PRUNE_LAYER blocks
         for i in range(self.PRUNE_LAYER):
             x = self.blocks[i](x)
+        return x
 
-        # Confidence from intermediate CLS token
-        aux_logits  = self.aux_head(x[:, 0])                         # (B, C)
-        confidences = F.softmax(aux_logits, dim=-1).max(dim=-1).values  # (B,)
+    def _confidence(self, x_prefix: torch.Tensor) -> torch.Tensor:
+        """Max-softmax confidence of the auxiliary head at the prefix output.
 
-        keep_ratios = torch.where(
+        Args:
+            x_prefix: Prefix token sequence from ``_prefix`` (B, N, C).
+
+        Returns:
+            Per-image confidence (B,).
+        """
+        return F.softmax(self.aux_head(x_prefix[:, 0]), dim=-1).max(dim=-1).values
+
+    def _tail_logits(self, x_prefix: torch.Tensor, keep_ratio: float) -> torch.Tensor:
+        """Prune to ``keep_ratio`` then run the remaining blocks and head (batched).
+
+        Args:
+            x_prefix: Prefix token sequence from ``_prefix`` (B, N, C).
+            keep_ratio: Fraction of patch tokens to retain.
+
+        Returns:
+            Logits (B, num_classes).
+        """
+        x = self._prune_tokens(x_prefix, keep_ratio=keep_ratio)
+        for block in self.blocks[self.PRUNE_LAYER:]:
+            x = block(x)
+        x = self.norm(x)
+        return self.head(x[:, 0])
+
+    def _route(self, confidences: torch.Tensor) -> torch.Tensor:
+        """Map confidences to per-image keep ratios using the thresholds.
+
+        Args:
+            confidences: Per-image confidence (B,).
+
+        Returns:
+            Per-image keep ratio in {0.25, 0.50, 0.75} (B,).
+        """
+        return torch.where(
             confidences > self.high_thresh,
             torch.full_like(confidences, 0.25),
             torch.where(
@@ -158,17 +186,64 @@ class VitController(nn.Module):
             ),
         )
 
-        # Per-image tail: different pruning per sample
-        all_logits = []
-        for b in range(B):
-            x_b = x[b : b + 1]
-            x_b = self._prune_tokens(x_b, keep_ratio=keep_ratios[b].item())
-            for block in self.blocks[self.PRUNE_LAYER:]:
-                x_b = block(x_b)
-            x_b = self.norm(x_b)
-            all_logits.append(self.head(x_b[:, 0]))
+    def forward_fixed(self, x: torch.Tensor, keep_ratio: float) -> torch.Tensor:
+        """Batched forward at a single fixed keep_ratio (no per-image routing).
 
-        logits = torch.cat(all_logits, dim=0)
+        Args:
+            x: Input images (B, 3, 224, 224).
+            keep_ratio: Fixed fraction of patch tokens to retain.
+
+        Returns:
+            Main logits (B, num_classes).
+        """
+        return self._tail_logits(self._prefix(x), keep_ratio)
+
+    def forward_cached(
+        self, x: torch.Tensor
+    ) -> Tuple[torch.Tensor, Dict[float, torch.Tensor]]:
+        """One prefix pass + one batched tail per budget; for fast evaluation.
+
+        Lets the evaluator route any confidence-threshold pair without re-running
+        the backbone, by caching the confidence and the prediction at each budget.
+
+        Args:
+            x: Input images (B, 3, 224, 224).
+
+        Returns:
+            (confidences (B,), {budget: predictions (B,)}) for budgets 0.25/0.50/0.75.
+        """
+        x_prefix = self._prefix(x)
+        conf  = self._confidence(x_prefix)
+        preds = {
+            b: self._tail_logits(x_prefix, b).argmax(dim=-1) for b in self.BUDGETS
+        }
+        return conf, preds
+
+    def forward_inference(self, x: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:
+        """Inference forward with batched per-image budget routing.
+
+        Vectorised equivalent of processing each image at its routed budget: the
+        shared prefix runs once, each budget runs as a single batched tail, and
+        per-image logits are gathered by the routed keep ratio. Produces the same
+        result as a per-image loop but far faster.
+
+        Args:
+            x: Input images (B, 3, 224, 224).
+
+        Returns:
+            (logits, keep_ratios) where keep_ratios is a float tensor (B,)
+            indicating the budget fraction used per image.
+        """
+        x_prefix    = self._prefix(x)
+        confidences = self._confidence(x_prefix)
+        keep_ratios = self._route(confidences)
+
+        logits_by_budget = {b: self._tail_logits(x_prefix, b) for b in self.BUDGETS}
+        logits = torch.empty_like(logits_by_budget[0.50])
+        for b in self.BUDGETS:
+            mask = keep_ratios == b
+            if mask.any():
+                logits[mask] = logits_by_budget[b][mask]
         return logits, keep_ratios
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:

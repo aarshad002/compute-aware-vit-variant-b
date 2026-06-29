@@ -1,0 +1,48 @@
+/home/arooba/compute-aware-vit-variant-b/src/train.py:557: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_ckpt, map_location=device))
+Device  : cuda
+Config  : configs/controller.yaml
+Settings: {'model_type': 'controller', 'num_classes': 100, 'data_dir': '/home/arooba/compute-aware-vit-thesis/data/', 'output_dir': 'checkpoints/controller_clean_split', 'batch_size': 32, 'epochs': 20, 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'seed': 42, 'aux_loss_weight': 0.5, 'pretrained': True, 'split_seed': 42, 'val_size': 5000}
+Split   : {'split_seed': 42, 'train_size': 45000, 'val_size': 5000, 'test_size': 10000}
+Model   : vit_controller  (5,563,016 params)
+Training vit_controller for 20 epochs  |  output: checkpoints/controller_clean_split
+Epoch   1/20 | train_loss=3.6782  train_acc=0.5158 | val_loss=1.1019  val_acc=0.6900 | lr=1.00e-04 | 37.2s
+  ✓ best model saved → checkpoints/controller_clean_split/best_model.pt  (val_acc=0.6900)
+Epoch   2/20 | train_loss=2.0248  train_acc=0.7086 | val_loss=0.8908  val_acc=0.7424 | lr=1.00e-04 | 37.2s
+  ✓ best model saved → checkpoints/controller_clean_split/best_model.pt  (val_acc=0.7424)
+Epoch   3/20 | train_loss=1.5832  train_acc=0.7665 | val_loss=0.8423  val_acc=0.7476 | lr=1.00e-04 | 37.3s
+  ✓ best model saved → checkpoints/controller_clean_split/best_model.pt  (val_acc=0.7476)
+Epoch   4/20 | train_loss=1.3415  train_acc=0.8027 | val_loss=0.7770  val_acc=0.7792 | lr=1.00e-04 | 35.6s
+  ✓ best model saved → checkpoints/controller_clean_split/best_model.pt  (val_acc=0.7792)
+Epoch   5/20 | train_loss=1.1598  train_acc=0.8333 | val_loss=0.8022  val_acc=0.7634 | lr=1.00e-04 | 26.3s
+Epoch   6/20 | train_loss=1.0290  train_acc=0.8529 | val_loss=0.7718  val_acc=0.7784 | lr=1.00e-04 | 36.5s
+Epoch   7/20 | train_loss=0.9229  train_acc=0.8722 | val_loss=0.7904  val_acc=0.7746 | lr=1.00e-04 | 35.6s
+Epoch   8/20 | train_loss=0.8279  train_acc=0.8876 | val_loss=0.8044  val_acc=0.7774 | lr=1.00e-04 | 36.1s
+Epoch   9/20 | train_loss=0.7558  train_acc=0.8993 | val_loss=0.8193  val_acc=0.7736 | lr=1.00e-04 | 31.8s
+Epoch  10/20 | train_loss=0.6950  train_acc=0.9087 | val_loss=0.8134  val_acc=0.7794 | lr=1.00e-04 | 35.9s
+  ✓ best model saved → checkpoints/controller_clean_split/best_model.pt  (val_acc=0.7794)
+Epoch  11/20 | train_loss=0.6308  train_acc=0.9226 | val_loss=0.8644  val_acc=0.7690 | lr=1.00e-04 | 35.0s
+Epoch  12/20 | train_loss=0.5815  train_acc=0.9291 | val_loss=0.8555  val_acc=0.7766 | lr=1.00e-04 | 35.4s
+Epoch  13/20 | train_loss=0.5457  train_acc=0.9349 | val_loss=0.9103  val_acc=0.7642 | lr=1.00e-04 | 35.5s
+Epoch  14/20 | train_loss=0.4989  train_acc=0.9411 | val_loss=0.8564  val_acc=0.7870 | lr=1.00e-04 | 36.0s
+  ✓ best model saved → checkpoints/controller_clean_split/best_model.pt  (val_acc=0.7870)
+Epoch  15/20 | train_loss=0.4656  train_acc=0.9460 | val_loss=0.9447  val_acc=0.7664 | lr=1.00e-04 | 35.0s
+Epoch  16/20 | train_loss=0.4343  train_acc=0.9499 | val_loss=0.9468  val_acc=0.7686 | lr=1.00e-04 | 35.0s
+Epoch  17/20 | train_loss=0.4051  train_acc=0.9545 | val_loss=1.0211  val_acc=0.7620 | lr=1.00e-04 | 36.2s
+Epoch  18/20 | train_loss=0.3818  train_acc=0.9577 | val_loss=0.9584  val_acc=0.7720 | lr=1.00e-04 | 35.1s
+Epoch  19/20 | train_loss=0.3601  train_acc=0.9602 | val_loss=0.9776  val_acc=0.7722 | lr=1.00e-04 | 35.2s
+Epoch  20/20 | train_loss=0.3429  train_acc=0.9610 | val_loss=0.9939  val_acc=0.7656 | lr=1.00e-04 | 36.0s
+
+Loaded best checkpoint from checkpoints/controller_clean_split/best_model.pt (best epoch 14)
+
+Controller threshold evaluation:
+Caching controller predictions (val + test)…
+  [0.9,0.7]  val_acc=0.7870  avg_flops=0.6847  25%=40.30%  50%=20.78%  75%=38.92%
+  [0.8,0.6]  val_acc=0.7782  avg_flops=0.6445  25%=51.72%  50%=18.46%  75%=29.82%
+  [0.7,0.5]  val_acc=0.7696  avg_flops=0.6079  25%=61.08%  50%=18.42%  75%=20.50%
+  [0.6,0.4]  val_acc=0.7632  avg_flops=0.5706  25%=70.18%  50%=19.26%  75%=10.56%
+  [0.5,0.3]  val_acc=0.7540  avg_flops=0.5401  25%=79.50%  50%=16.20%  75%=4.30%
+Test eval [0.9,0.7]: test_acc=0.7789  avg_flops=0.6837
+Metrics saved → checkpoints/controller_clean_split/metrics.json
+
+Done.

@@ -1,0 +1,273 @@
+{
+  "model_name": "vit_controller",
+  "note": "Adaptive per-image token-budget routing (25/50/75% keep) from a learned confidence head, pruning after block 6. Thresholds selected on validation; test evaluated once. flops_giga_per_budget are the clean-split static-specialist FLOPs used as the cost basis; avg_flops_giga (== flops_giga) is the expected cost at the selected operating point.",
+  "parameters": 5563016,
+  "flops_giga_per_budget": {
+    "25pct": 0.491472384,
+    "50pct": 0.687450432,
+    "75pct": 0.88342848
+  },
+  "best_val_acc": 0.787,
+  "best_epoch": 14,
+  "avg_flops_giga": 0.684746,
+  "flops_giga": 0.684746,
+  "final_test_acc": 0.7789,
+  "selected_thresholds": {
+    "high_thresh": 0.9,
+    "low_thresh": 0.7
+  },
+  "test_result": {
+    "high_thresh": 0.9,
+    "low_thresh": 0.7,
+    "test_acc": 0.7789,
+    "avg_flops_giga": 0.683688,
+    "budget_distribution": {
+      "25pct": 0.4058,
+      "50pct": 0.2076,
+      "75pct": 0.3866
+    }
+  },
+  "threshold_results": [
+    {
+      "high_thresh": 0.9,
+      "low_thresh": 0.7,
+      "val_acc": 0.787,
+      "avg_flops_giga": 0.684746,
+      "budget_distribution": {
+        "25pct": 0.403,
+        "50pct": 0.2078,
+        "75pct": 0.3892
+      }
+    },
+    {
+      "high_thresh": 0.8,
+      "low_thresh": 0.6,
+      "val_acc": 0.7782,
+      "avg_flops_giga": 0.644531,
+      "budget_distribution": {
+        "25pct": 0.5172,
+        "50pct": 0.1846,
+        "75pct": 0.2982
+      }
+    },
+    {
+      "high_thresh": 0.7,
+      "low_thresh": 0.5,
+      "val_acc": 0.7696,
+      "avg_flops_giga": 0.607923,
+      "budget_distribution": {
+        "25pct": 0.6108,
+        "50pct": 0.1842,
+        "75pct": 0.205
+      }
+    },
+    {
+      "high_thresh": 0.6,
+      "low_thresh": 0.4,
+      "val_acc": 0.7632,
+      "avg_flops_giga": 0.570608,
+      "budget_distribution": {
+        "25pct": 0.7018,
+        "50pct": 0.1926,
+        "75pct": 0.1056
+      }
+    },
+    {
+      "high_thresh": 0.5,
+      "low_thresh": 0.3,
+      "val_acc": 0.754,
+      "avg_flops_giga": 0.540075,
+      "budget_distribution": {
+        "25pct": 0.795,
+        "50pct": 0.162,
+        "75pct": 0.043
+      }
+    }
+  ],
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 3.678155,
+      "train_acc": 0.515758,
+      "val_loss": 1.10193,
+      "val_acc": 0.69,
+      "lr": 0.0001,
+      "time_s": 37.18
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.02475,
+      "train_acc": 0.708637,
+      "val_loss": 0.89079,
+      "val_acc": 0.7424,
+      "lr": 0.0001,
+      "time_s": 37.25
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.583216,
+      "train_acc": 0.766536,
+      "val_loss": 0.842346,
+      "val_acc": 0.7476,
+      "lr": 0.0001,
+      "time_s": 37.28
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.341525,
+      "train_acc": 0.802676,
+      "val_loss": 0.77704,
+      "val_acc": 0.7792,
+      "lr": 0.0001,
+      "time_s": 35.62
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.159817,
+      "train_acc": 0.833304,
+      "val_loss": 0.802201,
+      "val_acc": 0.7634,
+      "lr": 0.0001,
+      "time_s": 26.27
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.028964,
+      "train_acc": 0.852929,
+      "val_loss": 0.771805,
+      "val_acc": 0.7784,
+      "lr": 0.0001,
+      "time_s": 36.51
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.922889,
+      "train_acc": 0.872244,
+      "val_loss": 0.790428,
+      "val_acc": 0.7746,
+      "lr": 0.0001,
+      "time_s": 35.57
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.827851,
+      "train_acc": 0.88758,
+      "val_loss": 0.804419,
+      "val_acc": 0.7774,
+      "lr": 0.0001,
+      "time_s": 36.12
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.755842,
+      "train_acc": 0.899315,
+      "val_loss": 0.819338,
+      "val_acc": 0.7736,
+      "lr": 0.0001,
+      "time_s": 31.75
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.694994,
+      "train_acc": 0.908739,
+      "val_loss": 0.813399,
+      "val_acc": 0.7794,
+      "lr": 0.0001,
+      "time_s": 35.85
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.630813,
+      "train_acc": 0.922564,
+      "val_loss": 0.864358,
+      "val_acc": 0.769,
+      "lr": 0.0001,
+      "time_s": 34.98
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.581489,
+      "train_acc": 0.929054,
+      "val_loss": 0.85549,
+      "val_acc": 0.7766,
+      "lr": 0.0001,
+      "time_s": 35.37
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.545719,
+      "train_acc": 0.934922,
+      "val_loss": 0.910284,
+      "val_acc": 0.7642,
+      "lr": 0.0001,
+      "time_s": 35.48
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.498926,
+      "train_acc": 0.941145,
+      "val_loss": 0.85636,
+      "val_acc": 0.787,
+      "lr": 0.0001,
+      "time_s": 36.04
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.465588,
+      "train_acc": 0.94599,
+      "val_loss": 0.944676,
+      "val_acc": 0.7664,
+      "lr": 0.0001,
+      "time_s": 35.01
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.434346,
+      "train_acc": 0.949947,
+      "val_loss": 0.946806,
+      "val_acc": 0.7686,
+      "lr": 0.0001,
+      "time_s": 35.03
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.405132,
+      "train_acc": 0.954503,
+      "val_loss": 1.021124,
+      "val_acc": 0.762,
+      "lr": 0.0001,
+      "time_s": 36.22
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.381793,
+      "train_acc": 0.957681,
+      "val_loss": 0.958428,
+      "val_acc": 0.772,
+      "lr": 0.0001,
+      "time_s": 35.08
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.36008,
+      "train_acc": 0.960215,
+      "val_loss": 0.977614,
+      "val_acc": 0.7722,
+      "lr": 0.0001,
+      "time_s": 35.19
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.342948,
+      "train_acc": 0.960993,
+      "val_loss": 0.993934,
+      "val_acc": 0.7656,
+      "lr": 0.0001,
+      "time_s": 36.05
+    }
+  ],
+  "split_seed": 42,
+  "train_size": 45000,
+  "val_size": 5000,
+  "test_size": 10000
+}

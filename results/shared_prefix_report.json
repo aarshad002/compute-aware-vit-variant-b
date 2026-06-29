@@ -1,0 +1,302 @@
+{
+  "note": "Shared-prefix progressive widening feasibility. Prefix counted once; tails accumulate. Single checkpoint reused at all budgets. No training.",
+  "phase1_weight_diffs": {
+    "static_25 vs static_50": 0.008,
+    "static_25 vs static_75": 0.007459,
+    "static_25 vs dense": 0.006647,
+    "static_50 vs static_75": 0.008118,
+    "static_50 vs dense": 0.007961,
+    "static_75 vs dense": 0.007037
+  },
+  "prefix_flops_giga": 0.291475584,
+  "full_flops_giga": {
+    "0.25": 0.491472384,
+    "0.5": 0.687450432,
+    "0.75": 0.88342848,
+    "1.0": 1.079406528
+  },
+  "tail_flops_giga": {
+    "0.25": 0.19999679999999997,
+    "0.5": 0.395974848,
+    "0.75": 0.591952896,
+    "1.0": 0.787930944
+  },
+  "shared_prefix_cumulative_exit_flops": {
+    "25": 0.491472384,
+    "50": 0.887447232,
+    "75": 1.479400128,
+    "dense": 2.267331072
+  },
+  "full_cascade_exit_dense_flops": 3.141757824,
+  "val_accuracy_table": {
+    "static_25": {
+      "0.25": 0.7304,
+      "0.5": 0.7636,
+      "0.75": 0.7672,
+      "1.0": 0.7624
+    },
+    "static_50": {
+      "0.25": 0.7112,
+      "0.5": 0.7738,
+      "0.75": 0.7848,
+      "1.0": 0.7822
+    },
+    "static_75": {
+      "0.25": 0.6424,
+      "0.5": 0.7588,
+      "0.75": 0.7884,
+      "1.0": 0.7976
+    },
+    "dense": {
+      "0.25": 0.5352,
+      "0.5": 0.7054,
+      "0.75": 0.7742,
+      "1.0": 0.8074
+    }
+  },
+  "baselines_val": {
+    "static_25": 0.7304,
+    "static_50": 0.7738,
+    "static_75": 0.7884,
+    "dense": 0.8074,
+    "controller": 0.787
+  },
+  "candidates": {
+    "static_50": {
+      "auroc_conf25_predicts_correct25": 0.8477,
+      "ece_at_25": 0.1409,
+      "brier_at_25": 0.1699,
+      "acc25": 0.7112,
+      "progressive_widening_curve_val": [
+        {
+          "threshold": 1.01,
+          "accuracy": 0.7822,
+          "avg_flops_giga": 2.26733,
+          "exit_rates": {
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "dense": 1.0
+          }
+        },
+        {
+          "threshold": 0.3,
+          "accuracy": 0.716,
+          "avg_flops_giga": 0.502,
+          "exit_rates": {
+            "25": 0.9798,
+            "50": 0.017,
+            "75": 0.0024,
+            "dense": 0.0008
+          }
+        },
+        {
+          "threshold": 0.4,
+          "accuracy": 0.7238,
+          "avg_flops_giga": 0.52157,
+          "exit_rates": {
+            "25": 0.949,
+            "50": 0.0412,
+            "75": 0.0046,
+            "dense": 0.0052
+          }
+        },
+        {
+          "threshold": 0.5,
+          "accuracy": 0.7342,
+          "avg_flops_giga": 0.56009,
+          "exit_rates": {
+            "25": 0.9032,
+            "50": 0.068,
+            "75": 0.012,
+            "dense": 0.0168
+          }
+        },
+        {
+          "threshold": 0.6,
+          "accuracy": 0.7456,
+          "avg_flops_giga": 0.61583,
+          "exit_rates": {
+            "25": 0.8416,
+            "50": 0.1022,
+            "75": 0.0202,
+            "dense": 0.036
+          }
+        },
+        {
+          "threshold": 0.7,
+          "accuracy": 0.7574,
+          "avg_flops_giga": 0.69755,
+          "exit_rates": {
+            "25": 0.7774,
+            "50": 0.1208,
+            "75": 0.0286,
+            "dense": 0.0732
+          }
+        },
+        {
+          "threshold": 0.8,
+          "accuracy": 0.7662,
+          "avg_flops_giga": 0.79328,
+          "exit_rates": {
+            "25": 0.7126,
+            "50": 0.1298,
+            "75": 0.0374,
+            "dense": 0.1202
+          }
+        },
+        {
+          "threshold": 0.9,
+          "accuracy": 0.7738,
+          "avg_flops_giga": 0.93914,
+          "exit_rates": {
+            "25": 0.629,
+            "50": 0.1294,
+            "75": 0.0414,
+            "dense": 0.2002
+          }
+        },
+        {
+          "threshold": 0.95,
+          "accuracy": 0.7748,
+          "avg_flops_giga": 1.06929,
+          "exit_rates": {
+            "25": 0.5582,
+            "50": 0.1262,
+            "75": 0.0414,
+            "dense": 0.2742
+          }
+        },
+        {
+          "threshold": -0.01,
+          "accuracy": 0.7112,
+          "avg_flops_giga": 0.49147,
+          "exit_rates": {
+            "25": 1.0,
+            "50": 0.0,
+            "75": 0.0,
+            "dense": 0.0
+          }
+        }
+      ]
+    },
+    "static_25": {
+      "auroc_conf25_predicts_correct25": 0.8568,
+      "ece_at_25": 0.0622,
+      "brier_at_25": 0.1389,
+      "acc25": 0.7304,
+      "progressive_widening_curve_val": [
+        {
+          "threshold": 1.01,
+          "accuracy": 0.7624,
+          "avg_flops_giga": 2.26733,
+          "exit_rates": {
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "dense": 1.0
+          }
+        },
+        {
+          "threshold": 0.3,
+          "accuracy": 0.7398,
+          "avg_flops_giga": 0.5234,
+          "exit_rates": {
+            "25": 0.9622,
+            "50": 0.0222,
+            "75": 0.0058,
+            "dense": 0.0098
+          }
+        },
+        {
+          "threshold": 0.4,
+          "accuracy": 0.7486,
+          "avg_flops_giga": 0.57554,
+          "exit_rates": {
+            "25": 0.9064,
+            "50": 0.0528,
+            "75": 0.0118,
+            "dense": 0.029
+          }
+        },
+        {
+          "threshold": 0.5,
+          "accuracy": 0.7534,
+          "avg_flops_giga": 0.65853,
+          "exit_rates": {
+            "25": 0.8388,
+            "50": 0.0752,
+            "75": 0.0196,
+            "dense": 0.0664
+          }
+        },
+        {
+          "threshold": 0.6,
+          "accuracy": 0.7562,
+          "avg_flops_giga": 0.77296,
+          "exit_rates": {
+            "25": 0.7622,
+            "50": 0.0872,
+            "75": 0.026,
+            "dense": 0.1246
+          }
+        },
+        {
+          "threshold": 0.7,
+          "accuracy": 0.758,
+          "avg_flops_giga": 0.89838,
+          "exit_rates": {
+            "25": 0.6886,
+            "50": 0.0884,
+            "75": 0.0306,
+            "dense": 0.1924
+          }
+        },
+        {
+          "threshold": 0.8,
+          "accuracy": 0.7604,
+          "avg_flops_giga": 1.04333,
+          "exit_rates": {
+            "25": 0.6118,
+            "50": 0.0806,
+            "75": 0.0334,
+            "dense": 0.2742
+          }
+        },
+        {
+          "threshold": 0.9,
+          "accuracy": 0.7618,
+          "avg_flops_giga": 1.25176,
+          "exit_rates": {
+            "25": 0.502,
+            "50": 0.0736,
+            "75": 0.0286,
+            "dense": 0.3958
+          }
+        },
+        {
+          "threshold": 0.95,
+          "accuracy": 0.7622,
+          "avg_flops_giga": 1.42036,
+          "exit_rates": {
+            "25": 0.418,
+            "50": 0.065,
+            "75": 0.019,
+            "dense": 0.498
+          }
+        },
+        {
+          "threshold": -0.01,
+          "accuracy": 0.7304,
+          "avg_flops_giga": 0.49147,
+          "exit_rates": {
+            "25": 1.0,
+            "50": 0.0,
+            "75": 0.0,
+            "dense": 0.0
+          }
+        }
+      ]
+    }
+  }
+}

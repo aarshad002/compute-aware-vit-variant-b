@@ -1,0 +1,486 @@
+{
+  "model_name": "multibudget_progressive",
+  "cost_model": "shared-prefix cumulative (prefix once + tails executed)",
+  "flops_breakdown": {
+    "prefix": 0.291475584,
+    "full_per_budget": {
+      "0.25": 0.491472384,
+      "0.5": 0.687450432,
+      "0.75": 0.88342848,
+      "1.0": 1.079406528
+    },
+    "tail_per_budget": {
+      "0.25": 0.19999679999999997,
+      "0.5": 0.395974848,
+      "0.75": 0.591952896,
+      "1.0": 0.787930944
+    },
+    "shared_prefix_exit_cost": {
+      "25": 0.491472384,
+      "50": 0.887447232,
+      "75": 1.479400128,
+      "dense": 2.267331072
+    }
+  },
+  "fixed_budget_val_acc": {
+    "25": 0.7434,
+    "50": 0.7874,
+    "75": 0.8044,
+    "dense": 0.8082
+  },
+  "fixed_budget_test_acc": {
+    "25": 0.7483,
+    "50": 0.7914,
+    "75": 0.8033,
+    "dense": 0.807
+  },
+  "auroc_conf25_predicts_correct25_val": 0.8613,
+  "threshold_grid": [
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "all_threshold_results_val": [
+    {
+      "threshold": 1.01,
+      "accuracy": 0.8082,
+      "avg_flops_giga": 2.267331,
+      "exit_25_rate": 0.0,
+      "exit_50_rate": 0.0,
+      "exit_75_rate": 0.0,
+      "dense_rate": 1.0,
+      "exit_25_acc": null,
+      "exit_50_acc": null,
+      "exit_75_acc": null,
+      "dense_exit_acc": 0.8082,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.3,
+      "accuracy": 0.7498,
+      "avg_flops_giga": 0.513569,
+      "exit_25_rate": 0.9678,
+      "exit_50_rate": 0.0228,
+      "exit_75_rate": 0.0046,
+      "dense_rate": 0.0048,
+      "exit_25_acc": 0.759661,
+      "exit_50_acc": 0.517544,
+      "exit_75_acc": 0.347826,
+      "dense_exit_acc": 0.25,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.4,
+      "accuracy": 0.7624,
+      "avg_flops_giga": 0.548658,
+      "exit_25_rate": 0.9242,
+      "exit_50_rate": 0.0496,
+      "exit_75_rate": 0.0114,
+      "dense_rate": 0.0148,
+      "exit_25_acc": 0.783597,
+      "exit_50_acc": 0.568548,
+      "exit_75_acc": 0.473684,
+      "dense_exit_acc": 0.310811,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.7766,
+      "avg_flops_giga": 0.625778,
+      "exit_25_rate": 0.8562,
+      "exit_50_rate": 0.0762,
+      "exit_75_rate": 0.0202,
+      "dense_rate": 0.0474,
+      "exit_25_acc": 0.818968,
+      "exit_50_acc": 0.616798,
+      "exit_75_acc": 0.574257,
+      "dense_exit_acc": 0.35443,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.6,
+      "accuracy": 0.7908,
+      "avg_flops_giga": 0.71832,
+      "exit_25_rate": 0.784,
+      "exit_50_rate": 0.0968,
+      "exit_75_rate": 0.0294,
+      "dense_rate": 0.0898,
+      "exit_25_acc": 0.853061,
+      "exit_50_acc": 0.690083,
+      "exit_75_acc": 0.639456,
+      "dense_exit_acc": 0.405345,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.7,
+      "accuracy": 0.7972,
+      "avg_flops_giga": 0.828606,
+      "exit_25_rate": 0.7096,
+      "exit_50_rate": 0.1084,
+      "exit_75_rate": 0.0368,
+      "dense_rate": 0.1452,
+      "exit_25_acc": 0.883033,
+      "exit_50_acc": 0.745387,
+      "exit_75_acc": 0.701087,
+      "dense_exit_acc": 0.440771,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.8,
+      "accuracy": 0.8042,
+      "avg_flops_giga": 0.958408,
+      "exit_25_rate": 0.634,
+      "exit_50_rate": 0.1098,
+      "exit_75_rate": 0.04,
+      "dense_rate": 0.2162,
+      "exit_25_acc": 0.911356,
+      "exit_50_acc": 0.812386,
+      "exit_75_acc": 0.75,
+      "dense_exit_acc": 0.495837,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.9,
+      "accuracy": 0.8068,
+      "avg_flops_giga": 1.158875,
+      "exit_25_rate": 0.5242,
+      "exit_50_rate": 0.108,
+      "exit_75_rate": 0.0362,
+      "dense_rate": 0.3316,
+      "exit_25_acc": 0.945822,
+      "exit_50_acc": 0.890741,
+      "exit_75_acc": 0.878453,
+      "dense_exit_acc": 0.55187,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.95,
+      "accuracy": 0.8078,
+      "avg_flops_giga": 1.321854,
+      "exit_25_rate": 0.4358,
+      "exit_50_rate": 0.104,
+      "exit_75_rate": 0.0356,
+      "dense_rate": 0.4246,
+      "exit_25_acc": 0.97017,
+      "exit_50_acc": 0.926923,
+      "exit_75_acc": 0.926966,
+      "dense_exit_acc": 0.601978,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": -0.01,
+      "accuracy": 0.7434,
+      "avg_flops_giga": 0.491472,
+      "exit_25_rate": 1.0,
+      "exit_50_rate": 0.0,
+      "exit_75_rate": 0.0,
+      "dense_rate": 0.0,
+      "exit_25_acc": 0.7434,
+      "exit_50_acc": null,
+      "exit_75_acc": null,
+      "dense_exit_acc": null,
+      "pareto_optimal": true
+    }
+  ],
+  "pareto_frontier_val": [
+    {
+      "threshold": -0.01,
+      "accuracy": 0.7434,
+      "avg_flops_giga": 0.491472,
+      "exit_25_rate": 1.0,
+      "exit_50_rate": 0.0,
+      "exit_75_rate": 0.0,
+      "dense_rate": 0.0,
+      "exit_25_acc": 0.7434,
+      "exit_50_acc": null,
+      "exit_75_acc": null,
+      "dense_exit_acc": null,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.3,
+      "accuracy": 0.7498,
+      "avg_flops_giga": 0.513569,
+      "exit_25_rate": 0.9678,
+      "exit_50_rate": 0.0228,
+      "exit_75_rate": 0.0046,
+      "dense_rate": 0.0048,
+      "exit_25_acc": 0.759661,
+      "exit_50_acc": 0.517544,
+      "exit_75_acc": 0.347826,
+      "dense_exit_acc": 0.25,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.4,
+      "accuracy": 0.7624,
+      "avg_flops_giga": 0.548658,
+      "exit_25_rate": 0.9242,
+      "exit_50_rate": 0.0496,
+      "exit_75_rate": 0.0114,
+      "dense_rate": 0.0148,
+      "exit_25_acc": 0.783597,
+      "exit_50_acc": 0.568548,
+      "exit_75_acc": 0.473684,
+      "dense_exit_acc": 0.310811,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.7766,
+      "avg_flops_giga": 0.625778,
+      "exit_25_rate": 0.8562,
+      "exit_50_rate": 0.0762,
+      "exit_75_rate": 0.0202,
+      "dense_rate": 0.0474,
+      "exit_25_acc": 0.818968,
+      "exit_50_acc": 0.616798,
+      "exit_75_acc": 0.574257,
+      "dense_exit_acc": 0.35443,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.6,
+      "accuracy": 0.7908,
+      "avg_flops_giga": 0.71832,
+      "exit_25_rate": 0.784,
+      "exit_50_rate": 0.0968,
+      "exit_75_rate": 0.0294,
+      "dense_rate": 0.0898,
+      "exit_25_acc": 0.853061,
+      "exit_50_acc": 0.690083,
+      "exit_75_acc": 0.639456,
+      "dense_exit_acc": 0.405345,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.7,
+      "accuracy": 0.7972,
+      "avg_flops_giga": 0.828606,
+      "exit_25_rate": 0.7096,
+      "exit_50_rate": 0.1084,
+      "exit_75_rate": 0.0368,
+      "dense_rate": 0.1452,
+      "exit_25_acc": 0.883033,
+      "exit_50_acc": 0.745387,
+      "exit_75_acc": 0.701087,
+      "dense_exit_acc": 0.440771,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.8,
+      "accuracy": 0.8042,
+      "avg_flops_giga": 0.958408,
+      "exit_25_rate": 0.634,
+      "exit_50_rate": 0.1098,
+      "exit_75_rate": 0.04,
+      "dense_rate": 0.2162,
+      "exit_25_acc": 0.911356,
+      "exit_50_acc": 0.812386,
+      "exit_75_acc": 0.75,
+      "dense_exit_acc": 0.495837,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.9,
+      "accuracy": 0.8068,
+      "avg_flops_giga": 1.158875,
+      "exit_25_rate": 0.5242,
+      "exit_50_rate": 0.108,
+      "exit_75_rate": 0.0362,
+      "dense_rate": 0.3316,
+      "exit_25_acc": 0.945822,
+      "exit_50_acc": 0.890741,
+      "exit_75_acc": 0.878453,
+      "dense_exit_acc": 0.55187,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 0.95,
+      "accuracy": 0.8078,
+      "avg_flops_giga": 1.321854,
+      "exit_25_rate": 0.4358,
+      "exit_50_rate": 0.104,
+      "exit_75_rate": 0.0356,
+      "dense_rate": 0.4246,
+      "exit_25_acc": 0.97017,
+      "exit_50_acc": 0.926923,
+      "exit_75_acc": 0.926966,
+      "dense_exit_acc": 0.601978,
+      "pareto_optimal": true
+    },
+    {
+      "threshold": 1.01,
+      "accuracy": 0.8082,
+      "avg_flops_giga": 2.267331,
+      "exit_25_rate": 0.0,
+      "exit_50_rate": 0.0,
+      "exit_75_rate": 0.0,
+      "dense_rate": 1.0,
+      "exit_25_acc": null,
+      "exit_50_acc": null,
+      "exit_75_acc": null,
+      "dense_exit_acc": 0.8082,
+      "pareto_optimal": true
+    }
+  ],
+  "selected_operating_points": {
+    "highest_val_acc": {
+      "threshold": 1.01,
+      "accuracy": 0.8082,
+      "avg_flops_giga": 2.267331,
+      "exit_25_rate": 0.0,
+      "exit_50_rate": 0.0,
+      "exit_75_rate": 0.0,
+      "dense_rate": 1.0,
+      "exit_25_acc": null,
+      "exit_50_acc": null,
+      "exit_75_acc": null,
+      "dense_exit_acc": 0.8082,
+      "pareto_optimal": true
+    },
+    "best_under_static75_flops": {
+      "threshold": 0.7,
+      "accuracy": 0.7972,
+      "avg_flops_giga": 0.828606,
+      "exit_25_rate": 0.7096,
+      "exit_50_rate": 0.1084,
+      "exit_75_rate": 0.0368,
+      "dense_rate": 0.1452,
+      "exit_25_acc": 0.883033,
+      "exit_50_acc": 0.745387,
+      "exit_75_acc": 0.701087,
+      "dense_exit_acc": 0.440771,
+      "pareto_optimal": true
+    },
+    "best_under_static50_flops": {
+      "threshold": 0.5,
+      "accuracy": 0.7766,
+      "avg_flops_giga": 0.625778,
+      "exit_25_rate": 0.8562,
+      "exit_50_rate": 0.0762,
+      "exit_75_rate": 0.0202,
+      "dense_rate": 0.0474,
+      "exit_25_acc": 0.818968,
+      "exit_50_acc": 0.616798,
+      "exit_75_acc": 0.574257,
+      "dense_exit_acc": 0.35443,
+      "pareto_optimal": true
+    },
+    "pareto_knee": {
+      "threshold": -0.01,
+      "accuracy": 0.7434,
+      "avg_flops_giga": 0.491472,
+      "exit_25_rate": 1.0,
+      "exit_50_rate": 0.0,
+      "exit_75_rate": 0.0,
+      "dense_rate": 0.0,
+      "exit_25_acc": 0.7434,
+      "exit_50_acc": null,
+      "exit_75_acc": null,
+      "dense_exit_acc": null,
+      "pareto_optimal": true
+    }
+  },
+  "final_test_results": {
+    "highest_val_acc": {
+      "threshold": 1.01,
+      "accuracy": 0.807,
+      "avg_flops_giga": 2.267331,
+      "exit_25_rate": 0.0,
+      "exit_50_rate": 0.0,
+      "exit_75_rate": 0.0,
+      "dense_rate": 1.0,
+      "exit_25_acc": null,
+      "exit_50_acc": null,
+      "exit_75_acc": null,
+      "dense_exit_acc": 0.807
+    },
+    "best_under_static75_flops": {
+      "threshold": 0.7,
+      "accuracy": 0.7921,
+      "avg_flops_giga": 0.831247,
+      "exit_25_rate": 0.7096,
+      "exit_50_rate": 0.1078,
+      "exit_75_rate": 0.0345,
+      "dense_rate": 0.1481,
+      "exit_25_acc": 0.882469,
+      "exit_50_acc": 0.736549,
+      "exit_75_acc": 0.698551,
+      "dense_exit_acc": 0.421337
+    },
+    "best_under_static50_flops": {
+      "threshold": 0.5,
+      "accuracy": 0.7728,
+      "avg_flops_giga": 0.627521,
+      "exit_25_rate": 0.8519,
+      "exit_50_rate": 0.0787,
+      "exit_75_rate": 0.0233,
+      "dense_rate": 0.0461,
+      "exit_25_acc": 0.818875,
+      "exit_50_acc": 0.609911,
+      "exit_75_acc": 0.502146,
+      "dense_exit_acc": 0.336226
+    },
+    "pareto_knee": {
+      "threshold": -0.01,
+      "accuracy": 0.7483,
+      "avg_flops_giga": 0.491472,
+      "exit_25_rate": 1.0,
+      "exit_50_rate": 0.0,
+      "exit_75_rate": 0.0,
+      "dense_rate": 0.0,
+      "exit_25_acc": 0.7483,
+      "exit_50_acc": null,
+      "exit_75_acc": null,
+      "dense_exit_acc": null
+    }
+  },
+  "baselines_test": {
+    "static_25": {
+      "test": 0.7283,
+      "flops": 0.491472384
+    },
+    "static_50": {
+      "test": 0.7686,
+      "flops": 0.687450432
+    },
+    "static_75": {
+      "test": 0.7891,
+      "flops": 0.88342848
+    },
+    "dense": {
+      "test": 0.795,
+      "flops": 1.079406528
+    },
+    "controller": {
+      "test": 0.7789,
+      "flops": 0.684746
+    },
+    "cascade[highest_val_acc]": {
+      "test": 0.8175,
+      "flops": 1.356347
+    },
+    "cascade[pareto_knee]": {
+      "test": 0.739,
+      "flops": 0.521493
+    },
+    "cascade[best_under_static75_flops]": {
+      "test": 0.7973,
+      "flops": 0.886201
+    },
+    "cascade[best_under_static50_flops]": {
+      "test": 0.7748,
+      "flops": 0.686993
+    }
+  },
+  "split_seed": 42,
+  "train_size": 45000,
+  "val_size": 5000,
+  "test_size": 10000
+}

@@ -1,0 +1,40 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/arooba/compute-aware-vit-variant-b/src/train.py:536: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_ckpt, map_location=device))
+Device  : cuda
+Config  : configs/dense.yaml
+Settings: {'model_type': 'dense', 'num_classes': 100, 'data_dir': '/home/arooba/compute-aware-vit-thesis/data/', 'output_dir': 'checkpoints/dense_clean_split', 'batch_size': 32, 'epochs': 20, 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'seed': 42, 'pretrained': True, 'split_seed': 42, 'val_size': 5000}
+Split   : {'split_seed': 42, 'train_size': 45000, 'val_size': 5000, 'test_size': 10000}
+Model   : vit_dense  (5,543,716 params)
+Training vit_dense for 20 epochs  |  output: checkpoints/dense_clean_split
+Epoch   1/20 | train_loss=1.7807  train_acc=0.5592 | val_loss=0.9925  val_acc=0.7150 | lr=1.00e-04 | 34.5s
+  ✓ best model saved → checkpoints/dense_clean_split/best_model.pt  (val_acc=0.7150)
+Epoch   2/20 | train_loss=0.8605  train_acc=0.7484 | val_loss=0.8172  val_acc=0.7562 | lr=1.00e-04 | 34.2s
+  ✓ best model saved → checkpoints/dense_clean_split/best_model.pt  (val_acc=0.7562)
+Epoch   3/20 | train_loss=0.6455  train_acc=0.8053 | val_loss=0.7575  val_acc=0.7760 | lr=1.00e-04 | 34.9s
+  ✓ best model saved → checkpoints/dense_clean_split/best_model.pt  (val_acc=0.7760)
+Epoch   4/20 | train_loss=0.5348  train_acc=0.8342 | val_loss=0.7088  val_acc=0.7932 | lr=1.00e-04 | 34.0s
+  ✓ best model saved → checkpoints/dense_clean_split/best_model.pt  (val_acc=0.7932)
+Epoch   5/20 | train_loss=0.4358  train_acc=0.8650 | val_loss=0.7108  val_acc=0.7914 | lr=1.00e-04 | 31.2s
+Epoch   6/20 | train_loss=0.3743  train_acc=0.8826 | val_loss=0.7523  val_acc=0.7906 | lr=1.00e-04 | 34.5s
+Epoch   7/20 | train_loss=0.3147  train_acc=0.8990 | val_loss=0.6960  val_acc=0.8074 | lr=1.00e-04 | 34.5s
+  ✓ best model saved → checkpoints/dense_clean_split/best_model.pt  (val_acc=0.8074)
+Epoch   8/20 | train_loss=0.2734  train_acc=0.9119 | val_loss=0.7616  val_acc=0.7932 | lr=1.00e-04 | 32.1s
+Epoch   9/20 | train_loss=0.2420  train_acc=0.9219 | val_loss=0.7580  val_acc=0.7976 | lr=1.00e-04 | 32.6s
+Epoch  10/20 | train_loss=0.2049  train_acc=0.9341 | val_loss=0.7855  val_acc=0.7896 | lr=1.00e-04 | 34.2s
+Epoch  11/20 | train_loss=0.1936  train_acc=0.9383 | val_loss=0.7608  val_acc=0.7994 | lr=1.00e-04 | 35.2s
+Epoch  12/20 | train_loss=0.1763  train_acc=0.9426 | val_loss=0.8077  val_acc=0.7948 | lr=1.00e-04 | 34.0s
+Epoch  13/20 | train_loss=0.1618  train_acc=0.9483 | val_loss=0.8466  val_acc=0.7850 | lr=1.00e-04 | 33.9s
+Epoch  14/20 | train_loss=0.1492  train_acc=0.9517 | val_loss=0.8518  val_acc=0.7956 | lr=1.00e-04 | 34.0s
+Epoch  15/20 | train_loss=0.1395  train_acc=0.9543 | val_loss=0.8638  val_acc=0.7954 | lr=1.00e-04 | 34.5s
+Epoch  16/20 | train_loss=0.1258  train_acc=0.9595 | val_loss=0.8653  val_acc=0.7930 | lr=1.00e-04 | 34.4s
+Epoch  17/20 | train_loss=0.1167  train_acc=0.9627 | val_loss=0.8694  val_acc=0.7924 | lr=1.00e-04 | 34.0s
+Epoch  18/20 | train_loss=0.1237  train_acc=0.9610 | val_loss=0.8762  val_acc=0.7934 | lr=1.00e-04 | 34.1s
+Epoch  19/20 | train_loss=0.1099  train_acc=0.9653 | val_loss=0.8960  val_acc=0.7970 | lr=1.00e-04 | 32.0s
+Epoch  20/20 | train_loss=0.1125  train_acc=0.9641 | val_loss=0.9146  val_acc=0.7878 | lr=1.00e-04 | 33.3s
+
+Loaded best checkpoint from checkpoints/dense_clean_split/best_model.pt (best epoch 7)
+Metrics saved → checkpoints/dense_clean_split/metrics.json
+val_acc=0.8074  test_acc=0.7950  flops=1.0794 GFLOPs  params=5,543,716
+
+Done.

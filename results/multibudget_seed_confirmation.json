@@ -1,0 +1,180 @@
+{
+  "hardware": "NVIDIA RTX 6000 Ada Generation",
+  "timing": {
+    "batch_size": 128,
+    "precision": "fp32",
+    "warmup": 10,
+    "runs": 30,
+    "metric": "median per-batch, cuda-synchronized",
+    "note": "Winning result is FIXED-budget: every image runs the identical path, so it batches normally \u2014 no dynamic-batching penalty (unlike the abandoned widening path)."
+  },
+  "split": {
+    "split_seed": 42,
+    "train": 45000,
+    "val": 5000,
+    "test": 10000
+  },
+  "flops_giga_per_budget": {
+    "25": 0.0,
+    "50": 0.0,
+    "75": 0.0,
+    "dense": 0.0
+  },
+  "per_seed": {
+    "42": {
+      "best_epoch": 7,
+      "val": {
+        "25": 0.7434,
+        "50": 0.7874,
+        "75": 0.8044,
+        "dense": 0.8082
+      },
+      "test": {
+        "25": 0.7483,
+        "50": 0.7914,
+        "75": 0.8033,
+        "dense": 0.807
+      }
+    },
+    "123": {
+      "best_epoch": 7,
+      "val": {
+        "25": 0.7388,
+        "50": 0.7866,
+        "75": 0.7996,
+        "dense": 0.801
+      },
+      "test": {
+        "25": 0.7345,
+        "50": 0.7781,
+        "75": 0.7944,
+        "dense": 0.7989
+      }
+    },
+    "7": {
+      "best_epoch": 12,
+      "val": {
+        "25": 0.7504,
+        "50": 0.7908,
+        "75": 0.7996,
+        "dense": 0.8032
+      },
+      "test": {
+        "25": 0.7482,
+        "50": 0.7856,
+        "75": 0.7995,
+        "dense": 0.8028
+      }
+    }
+  },
+  "seeds_used": [
+    7,
+    42,
+    123
+  ],
+  "aggregate_test_mean_std": {
+    "25": {
+      "mean": 0.7437,
+      "std": 0.0065,
+      "per_seed": [
+        0.7482,
+        0.7483,
+        0.7345
+      ],
+      "flops_giga": 0.0
+    },
+    "50": {
+      "mean": 0.785,
+      "std": 0.0054,
+      "per_seed": [
+        0.7856,
+        0.7914,
+        0.7781
+      ],
+      "flops_giga": 0.0
+    },
+    "75": {
+      "mean": 0.7991,
+      "std": 0.0036,
+      "per_seed": [
+        0.7995,
+        0.8033,
+        0.7944
+      ],
+      "flops_giga": 0.0
+    },
+    "dense": {
+      "mean": 0.8029,
+      "std": 0.0033,
+      "per_seed": [
+        0.8028,
+        0.807,
+        0.7989
+      ],
+      "flops_giga": 0.0
+    }
+  },
+  "head_to_head_gaps": {
+    "multibudget@50_minus_static75": {
+      "mean": -0.0041,
+      "std": 0.0054,
+      "flops_multibudget@50": 0.0,
+      "flops_static75": 0.8834
+    },
+    "multibudget@75_minus_cascade_best": {
+      "mean": 0.0018,
+      "std": 0.0036
+    },
+    "multibudget@dense_minus_dense": {
+      "mean": 0.0079,
+      "std": 0.0033
+    }
+  },
+  "load_bearing_at25": {
+    "per_seed_test_at25": [
+      0.7482,
+      0.7483,
+      0.7345
+    ],
+    "static_25_specialist": 0.7283,
+    "all_seeds_above_specialist": true
+  },
+  "latency": {
+    "multibudget": {
+      "25": {
+        "images_per_sec": 11445.0,
+        "latency_ms_per_image": 0.0874
+      },
+      "50": {
+        "images_per_sec": 7822.5,
+        "latency_ms_per_image": 0.1278
+      },
+      "75": {
+        "images_per_sec": 6118.9,
+        "latency_ms_per_image": 0.1634
+      },
+      "dense": {
+        "images_per_sec": 4852.0,
+        "latency_ms_per_image": 0.2061
+      }
+    },
+    "specialist": {
+      "25": {
+        "images_per_sec": 11486.6,
+        "latency_ms_per_image": 0.0871
+      },
+      "50": {
+        "images_per_sec": 7715.1,
+        "latency_ms_per_image": 0.1296
+      },
+      "75": {
+        "images_per_sec": 6124.9,
+        "latency_ms_per_image": 0.1633
+      },
+      "dense": {
+        "images_per_sec": 4798.8,
+        "latency_ms_per_image": 0.2084
+      }
+    }
+  }
+}

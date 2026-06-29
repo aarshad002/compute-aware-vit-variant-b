@@ -1,0 +1,19 @@
+model_type: multibudget
+num_classes: 100
+data_dir: /home/arooba/compute-aware-vit-thesis/data/
+output_dir: checkpoints/multibudget_clean_split_seed123
+results_dir: results/multibudget_clean_split_seed123
+batch_size: 32
+epochs: 20
+learning_rate: 0.0001
+weight_decay: 0.0001
+seed: 123
+pretrained: true
+prune_layer: 3
+eval_budgets: [0.25, 0.50, 0.75, 1.00]
+middle_budgets: [0.50, 0.75]
+use_all_budgets: false
+distill_weight: 0.5
+eval_test: false
+split_seed: 42
+val_size: 5000

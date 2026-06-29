@@ -4,5 +4,5 @@ mkdir -p /home/arooba/compute-aware-vit-variant-b/scripts/logs
 cd /home/arooba/compute-aware-vit-variant-b
 nohup conda run -n ai_assisted_env python -u src/train.py \
   --config configs/cascade.yaml \
-  > scripts/logs/cascade.out 2>&1 &
+  > scripts/logs/cascade_clean_split.out 2>&1 &
 echo "started PID $!"

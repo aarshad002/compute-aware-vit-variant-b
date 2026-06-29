@@ -1,0 +1,44 @@
+/home/arooba/compute-aware-vit-variant-b/src/train.py:536: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_ckpt, map_location=device))
+Device  : cuda
+Config  : configs/static_75.yaml
+Settings: {'model_type': 'static', 'num_classes': 100, 'keep_ratio': 0.75, 'prune_layer': 3, 'data_dir': '/home/arooba/compute-aware-vit-thesis/data/', 'output_dir': 'checkpoints/static_75_clean_split', 'batch_size': 32, 'epochs': 20, 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'seed': 42, 'pretrained': True, 'split_seed': 42, 'val_size': 5000}
+Split   : {'split_seed': 42, 'train_size': 45000, 'val_size': 5000, 'test_size': 10000}
+Model   : vit_static_75  (5,543,716 params)
+Training vit_static_75 for 20 epochs  |  output: checkpoints/static_75_clean_split
+Epoch   1/20 | train_loss=1.8157  train_acc=0.5471 | val_loss=1.0474  val_acc=0.6998 | lr=1.00e-04 | 62.0s
+  ✓ best model saved → checkpoints/static_75_clean_split/best_model.pt  (val_acc=0.6998)
+Epoch   2/20 | train_loss=0.9165  train_acc=0.7340 | val_loss=0.8785  val_acc=0.7418 | lr=1.00e-04 | 66.1s
+  ✓ best model saved → checkpoints/static_75_clean_split/best_model.pt  (val_acc=0.7418)
+Epoch   3/20 | train_loss=0.7096  train_acc=0.7894 | val_loss=0.7930  val_acc=0.7616 | lr=1.00e-04 | 67.0s
+  ✓ best model saved → checkpoints/static_75_clean_split/best_model.pt  (val_acc=0.7616)
+Epoch   4/20 | train_loss=0.5797  train_acc=0.8235 | val_loss=0.7827  val_acc=0.7700 | lr=1.00e-04 | 66.1s
+  ✓ best model saved → checkpoints/static_75_clean_split/best_model.pt  (val_acc=0.7700)
+Epoch   5/20 | train_loss=0.4894  train_acc=0.8476 | val_loss=0.7355  val_acc=0.7792 | lr=1.00e-04 | 64.6s
+  ✓ best model saved → checkpoints/static_75_clean_split/best_model.pt  (val_acc=0.7792)
+Epoch   6/20 | train_loss=0.4191  train_acc=0.8676 | val_loss=0.7818  val_acc=0.7808 | lr=1.00e-04 | 66.2s
+  ✓ best model saved → checkpoints/static_75_clean_split/best_model.pt  (val_acc=0.7808)
+Epoch   7/20 | train_loss=0.3695  train_acc=0.8841 | val_loss=0.7985  val_acc=0.7814 | lr=1.00e-04 | 65.9s
+  ✓ best model saved → checkpoints/static_75_clean_split/best_model.pt  (val_acc=0.7814)
+Epoch   8/20 | train_loss=0.3181  train_acc=0.8989 | val_loss=0.7799  val_acc=0.7866 | lr=1.00e-04 | 65.8s
+  ✓ best model saved → checkpoints/static_75_clean_split/best_model.pt  (val_acc=0.7866)
+Epoch   9/20 | train_loss=0.2779  train_acc=0.9102 | val_loss=0.7736  val_acc=0.7880 | lr=1.00e-04 | 65.7s
+  ✓ best model saved → checkpoints/static_75_clean_split/best_model.pt  (val_acc=0.7880)
+Epoch  10/20 | train_loss=0.2489  train_acc=0.9198 | val_loss=0.8244  val_acc=0.7826 | lr=1.00e-04 | 65.7s
+Epoch  11/20 | train_loss=0.2181  train_acc=0.9300 | val_loss=0.8238  val_acc=0.7832 | lr=1.00e-04 | 65.8s
+Epoch  12/20 | train_loss=0.2038  train_acc=0.9346 | val_loss=0.8283  val_acc=0.7866 | lr=1.00e-04 | 65.7s
+Epoch  13/20 | train_loss=0.1855  train_acc=0.9409 | val_loss=0.8153  val_acc=0.7854 | lr=1.00e-04 | 65.4s
+Epoch  14/20 | train_loss=0.1717  train_acc=0.9457 | val_loss=0.8585  val_acc=0.7884 | lr=1.00e-04 | 65.2s
+  ✓ best model saved → checkpoints/static_75_clean_split/best_model.pt  (val_acc=0.7884)
+Epoch  15/20 | train_loss=0.1585  train_acc=0.9497 | val_loss=0.8731  val_acc=0.7834 | lr=1.00e-04 | 46.8s
+Epoch  16/20 | train_loss=0.1502  train_acc=0.9520 | val_loss=0.8809  val_acc=0.7850 | lr=1.00e-04 | 43.0s
+Epoch  17/20 | train_loss=0.1459  train_acc=0.9535 | val_loss=0.9213  val_acc=0.7794 | lr=1.00e-04 | 40.4s
+Epoch  18/20 | train_loss=0.1395  train_acc=0.9560 | val_loss=0.9374  val_acc=0.7822 | lr=1.00e-04 | 35.5s
+Epoch  19/20 | train_loss=0.1254  train_acc=0.9597 | val_loss=0.9520  val_acc=0.7688 | lr=1.00e-04 | 35.2s
+Epoch  20/20 | train_loss=0.1231  train_acc=0.9609 | val_loss=0.9391  val_acc=0.7826 | lr=1.00e-04 | 34.2s
+
+Loaded best checkpoint from checkpoints/static_75_clean_split/best_model.pt (best epoch 14)
+Metrics saved → checkpoints/static_75_clean_split/metrics.json
+val_acc=0.7884  test_acc=0.7891  flops=0.8834 GFLOPs  params=5,543,716
+
+Done.

@@ -1,0 +1,10 @@
+# Python build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Local Claude Code settings (machine-specific)
+.claude/
+
+# OS cruft
+.DS_Store

@@ -1,0 +1,364 @@
+{
+  "note": "Oracle ceiling for SINGLE-PASS adaptive budget selection. Each image charged single-model FLOPs of its chosen budget (not cumulative). True labels used only to define the unattainable ceiling.",
+  "cost_model": "single-pass (one model per image)",
+  "single_model_flops_giga": {
+    "25": 0.491472384,
+    "50": 0.687450432,
+    "75": 0.88342848,
+    "dense": 1.079406528
+  },
+  "split_seed": 42,
+  "val": {
+    "n": 5000,
+    "per_model_accuracy": {
+      "25": 0.7304,
+      "50": 0.7738,
+      "75": 0.7884,
+      "dense": 0.8074
+    },
+    "coverage_any_correct": 0.9114,
+    "oracle_smallest_correct": {
+      "accuracy": 0.9114,
+      "avg_flops": 0.545170369152,
+      "budget_distribution": {
+        "25": 0.819,
+        "50": 0.112,
+        "75": 0.045,
+        "dense": 0.024
+      },
+      "budget_counts": {
+        "25": 4095,
+        "50": 560,
+        "75": 225,
+        "dense": 120
+      }
+    },
+    "oracle_highest_accuracy": {
+      "avg_flops": 0.5451703691520077,
+      "accuracy": 0.9114
+    },
+    "oracle_constrained": {
+      "under_static50_flops": {
+        "avg_flops": 0.5451703691520077,
+        "accuracy": 0.9114,
+        "cap": 0.687450432
+      },
+      "under_static75_flops": {
+        "avg_flops": 0.5451703691520077,
+        "accuracy": 0.9114,
+        "cap": 0.88342848
+      },
+      "under_dense_flops": {
+        "avg_flops": 0.5451703691520077,
+        "accuracy": 0.9114,
+        "cap": 1.079406528
+      }
+    },
+    "frontier_sample": [
+      {
+        "avg_flops": 0.49147,
+        "accuracy": 0.7304
+      },
+      {
+        "avg_flops": 0.49288,
+        "accuracy": 0.7376
+      },
+      {
+        "avg_flops": 0.49429,
+        "accuracy": 0.7448
+      },
+      {
+        "avg_flops": 0.49571,
+        "accuracy": 0.752
+      },
+      {
+        "avg_flops": 0.49712,
+        "accuracy": 0.7592
+      },
+      {
+        "avg_flops": 0.49853,
+        "accuracy": 0.7664
+      },
+      {
+        "avg_flops": 0.49994,
+        "accuracy": 0.7736
+      },
+      {
+        "avg_flops": 0.50135,
+        "accuracy": 0.7808
+      },
+      {
+        "avg_flops": 0.50276,
+        "accuracy": 0.788
+      },
+      {
+        "avg_flops": 0.50417,
+        "accuracy": 0.7952
+      },
+      {
+        "avg_flops": 0.50558,
+        "accuracy": 0.8024
+      },
+      {
+        "avg_flops": 0.50699,
+        "accuracy": 0.8096
+      },
+      {
+        "avg_flops": 0.5084,
+        "accuracy": 0.8168
+      },
+      {
+        "avg_flops": 0.50982,
+        "accuracy": 0.824
+      },
+      {
+        "avg_flops": 0.51123,
+        "accuracy": 0.8312
+      },
+      {
+        "avg_flops": 0.51264,
+        "accuracy": 0.8384
+      },
+      {
+        "avg_flops": 0.51468,
+        "accuracy": 0.8456
+      },
+      {
+        "avg_flops": 0.5175,
+        "accuracy": 0.8528
+      },
+      {
+        "avg_flops": 0.52032,
+        "accuracy": 0.86
+      },
+      {
+        "avg_flops": 0.52314,
+        "accuracy": 0.8672
+      },
+      {
+        "avg_flops": 0.52596,
+        "accuracy": 0.8744
+      },
+      {
+        "avg_flops": 0.52879,
+        "accuracy": 0.8816
+      },
+      {
+        "avg_flops": 0.53188,
+        "accuracy": 0.8888
+      },
+      {
+        "avg_flops": 0.53612,
+        "accuracy": 0.896
+      },
+      {
+        "avg_flops": 0.54035,
+        "accuracy": 0.9032
+      },
+      {
+        "avg_flops": 0.54458,
+        "accuracy": 0.9104
+      }
+    ]
+  },
+  "test": {
+    "n": 10000,
+    "per_model_accuracy": {
+      "25": 0.7283,
+      "50": 0.7686,
+      "75": 0.7891,
+      "dense": 0.795
+    },
+    "coverage_any_correct": 0.9102,
+    "oracle_smallest_correct": {
+      "accuracy": 0.9102,
+      "avg_flops": 0.5461306615871999,
+      "budget_distribution": {
+        "25": 0.8181,
+        "50": 0.1084,
+        "75": 0.05,
+        "dense": 0.0235
+      },
+      "budget_counts": {
+        "25": 8181,
+        "50": 1084,
+        "75": 500,
+        "dense": 235
+      }
+    },
+    "oracle_highest_accuracy": {
+      "avg_flops": 0.5461306615872398,
+      "accuracy": 0.9102
+    },
+    "oracle_constrained": {
+      "under_static50_flops": {
+        "avg_flops": 0.5461306615872398,
+        "accuracy": 0.9102,
+        "cap": 0.687450432
+      },
+      "under_static75_flops": {
+        "avg_flops": 0.5461306615872398,
+        "accuracy": 0.9102,
+        "cap": 0.88342848
+      },
+      "under_dense_flops": {
+        "avg_flops": 0.5461306615872398,
+        "accuracy": 0.9102,
+        "cap": 1.079406528
+      }
+    },
+    "frontier_sample": [
+      {
+        "avg_flops": 0.49147,
+        "accuracy": 0.7283
+      },
+      {
+        "avg_flops": 0.49288,
+        "accuracy": 0.7355
+      },
+      {
+        "avg_flops": 0.49429,
+        "accuracy": 0.7427
+      },
+      {
+        "avg_flops": 0.49571,
+        "accuracy": 0.7499
+      },
+      {
+        "avg_flops": 0.49712,
+        "accuracy": 0.7571
+      },
+      {
+        "avg_flops": 0.49853,
+        "accuracy": 0.7643
+      },
+      {
+        "avg_flops": 0.49994,
+        "accuracy": 0.7715
+      },
+      {
+        "avg_flops": 0.50135,
+        "accuracy": 0.7787
+      },
+      {
+        "avg_flops": 0.50276,
+        "accuracy": 0.7859
+      },
+      {
+        "avg_flops": 0.50417,
+        "accuracy": 0.7931
+      },
+      {
+        "avg_flops": 0.50558,
+        "accuracy": 0.8003
+      },
+      {
+        "avg_flops": 0.50699,
+        "accuracy": 0.8075
+      },
+      {
+        "avg_flops": 0.5084,
+        "accuracy": 0.8147
+      },
+      {
+        "avg_flops": 0.50982,
+        "accuracy": 0.8219
+      },
+      {
+        "avg_flops": 0.51123,
+        "accuracy": 0.8291
+      },
+      {
+        "avg_flops": 0.51264,
+        "accuracy": 0.8363
+      },
+      {
+        "avg_flops": 0.51538,
+        "accuracy": 0.8435
+      },
+      {
+        "avg_flops": 0.5182,
+        "accuracy": 0.8507
+      },
+      {
+        "avg_flops": 0.52103,
+        "accuracy": 0.8579
+      },
+      {
+        "avg_flops": 0.52385,
+        "accuracy": 0.8651
+      },
+      {
+        "avg_flops": 0.52667,
+        "accuracy": 0.8723
+      },
+      {
+        "avg_flops": 0.52949,
+        "accuracy": 0.8795
+      },
+      {
+        "avg_flops": 0.53231,
+        "accuracy": 0.8867
+      },
+      {
+        "avg_flops": 0.53655,
+        "accuracy": 0.8939
+      },
+      {
+        "avg_flops": 0.54078,
+        "accuracy": 0.9011
+      },
+      {
+        "avg_flops": 0.54501,
+        "accuracy": 0.9083
+      }
+    ]
+  },
+  "baselines": {
+    "static_25": {
+      "val": 0.7304,
+      "test": 0.7283,
+      "flops": 0.491472384
+    },
+    "static_50": {
+      "val": 0.7738,
+      "test": 0.7686,
+      "flops": 0.687450432
+    },
+    "static_75": {
+      "val": 0.7884,
+      "test": 0.7891,
+      "flops": 0.88342848
+    },
+    "dense": {
+      "val": 0.8074,
+      "test": 0.795,
+      "flops": 1.079406528
+    },
+    "controller": {
+      "val": 0.787,
+      "test": 0.7789,
+      "flops": 0.684746
+    },
+    "cascade[highest_val_acc]": {
+      "val": null,
+      "test": 0.8175,
+      "flops": 1.356347
+    },
+    "cascade[pareto_knee]": {
+      "val": null,
+      "test": 0.739,
+      "flops": 0.521493
+    },
+    "cascade[best_under_static75_flops]": {
+      "val": null,
+      "test": 0.7973,
+      "flops": 0.886201
+    },
+    "cascade[best_under_static50_flops]": {
+      "val": null,
+      "test": 0.7748,
+      "flops": 0.686993
+    }
+  }
+}

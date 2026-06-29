@@ -55,6 +55,7 @@ class Trainer:
 
         os.makedirs(output_dir, exist_ok=True)
         self.best_val_acc: float = 0.0
+        self.best_epoch: int = 0
         self.epoch_history: List[Dict[str, Any]] = []
 
     def _train_epoch(self) -> Tuple[float, float]:
@@ -163,11 +164,13 @@ class Trainer:
 
             if val_acc > self.best_val_acc:
                 self.best_val_acc = val_acc
+                self.best_epoch   = epoch
                 ckpt = os.path.join(self.output_dir, 'best_model.pt')
                 torch.save(self.model.state_dict(), ckpt)
                 print(f"  ✓ best model saved → {ckpt}  (val_acc={val_acc:.4f})")
 
         return {
             'best_val_acc':  self.best_val_acc,
+            'best_epoch':    self.best_epoch,
             'epoch_history': self.epoch_history,
         }

@@ -1,0 +1,21 @@
+model_type: multibudget
+num_classes: 100
+data_dir: /home/arooba/compute-aware-vit-thesis/data/
+output_dir: checkpoints/multibudget_clean_split
+results_dir: results/multibudget_clean_split
+batch_size: 32
+epochs: 20
+learning_rate: 0.0001
+weight_decay: 0.0001
+seed: 42
+pretrained: true
+prune_layer: 3
+# Sandwich multi-budget training: always train 0.25 and 1.00, plus one random middle.
+eval_budgets: [0.25, 0.50, 0.75, 1.00]
+middle_budgets: [0.50, 0.75]
+use_all_budgets: false
+distill_weight: 0.5          # in-place KD from full budget to smaller budgets
+eval_test: true              # run progressive-widening eval (val-select, test-once)
+# Clean train/val/test protocol (val held out from official train split)
+split_seed: 42
+val_size: 5000
